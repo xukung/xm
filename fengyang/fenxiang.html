@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <title>分享</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/slideout.css">
+    <link rel="stylesheet" href="css/fengyang.css">
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.swiper.min.js"></script>
+    <script src="js/slideout.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <!--html5shiv.min.js must be in head-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<nav id="menu">
+    <div class="tophead">-凤阳网络电视台-</div>
+    <ul class="clearfix mn">
+        <li><a href="cover.html">封面</a></li>
+        <li><a href="index.html">凤阳首页</a></li>
+        <li><a href="fynews.html">凤阳新闻</a></li>
+        <li><a href="sznews.html">时政新闻</a></li>
+        <li><a href="audiolist.html">音频列表</a></li>
+        <li><a href="guangbo.html">广播直播</a></li>
+        <li><a href="video.html">视频播放</a></li>
+        <li><a href="audio.html">音频播放</a></li>
+        <li><a href="yuedu.html">正在阅读</a></li>
+        <li><a href="fenxiang.html">分享</a></li>
+    </ul>
+</nav>
+
+<main id="panel">
+    <div class="logobar">
+        <span class="rback"><a href="#"><span class="song bold">&lt;</span> 返回 </a></span>
+        <span class="f26">分享到</span>
+        <span class="toggle-button"></span>
+    </div>
+    <div class="container">
+
+        <a id="fxBtn" href="#" class="btn btn-default">分享</a>
+
+        <div id="fx" style="display:none;">
+            <div class="padcon">
+                <div class="tcenter f18 fxtt"><a id="closeBtn" href="#">×</a>分享到</div>
+                <div class="bdsharebuttonbox">
+                    <table class="data" width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td width="50%"><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a></td>
+                            <td width="50%"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a></td>
+                        </tr>
+                        <tr>
+                            <td width="50%"><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a></td>
+                            <td width="50%"><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a></td>
+                        </tr>
+                        <tr>
+                            <td width="50%"><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a></td>
+                            <td width="50%"><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友">QQ好友</a></td>
+                        </tr>
+                    </table>
+                    <!--<a href="#" class="bds_more" data-cmd="more">分享到：</a>-->
+                </div>
+                <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16},"image":{"viewList":["weixin","qzone","tsina","tqq","renren","sqq"],"viewText":"分享到：","viewSize":"32"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["weixin","qzone","tsina","tqq","renren","sqq"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+            </div>
+        </div>
+
+
+
+
+        <link href="css/popup.css" rel="stylesheet">
+        <script src="js/jquery.XYTipsWindow.2.8.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#closeBtn").click(function(){
+                    $.XYTipsWindow.removeBox();
+                });
+                $("#fxBtn").click(function(){
+                    $.XYTipsWindow({
+                        ___width:300,
+                        ___height:140,
+                        ___title:"分享到",
+                        ___drag:"___boxTitle",
+                        ___offsets:"middle-middle",
+                        ___showbg:true,
+                        ___showTitle:false,
+                        ___content:"id:fx"
+                    });
+                });
+            })
+        </script>
+
+
+
+
+
+
+
+    </div>
+</main>
+</body>
+</html>
+

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>新增会议室</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <!--html5shiv.min.js must be in head-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/selectivizr.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<header>
+    <div class="logo"><a href="#"><img class="" src="images/logo_zijing.jpg"></a></div>
+    <div class="topbar clearfix">
+        <div class="fleft">管理控制台 &gt; 专属云管理 &gt; <span class="cyan">新增会议室</span></div>
+        <div class="fright"><a href="#">帮助</a> | <a href="#">客服</a> | <a href="#">David@163.com</a></div>
+    </div>
+</header>
+
+<div class="left-area">
+    <div class="tcenter pad10 gray">管理控制台</div>
+    <ul class="left-nav">
+        <li><a href="domain_index.html">域名管理</a></li>
+        <li><a href="user_index.html">用户管理</a></li>
+        <li><a href="meeting_index.html">会议管理</a></li>
+        <li><a href="terminal_index.html">终端管理</a></li>
+        <li><a href="cash_index.html">账务管理</a></li>
+        <li><a href="renew_index.html">续费管理</a></li>
+        <li><a href="order_index.html">工单管理</a></li>
+        <li><a href="message_index.html">消息管理</a></li>
+        <li class="cur"><a href="cloud_index.html">专属云管理</a></li>
+    </ul>
+</div>
+
+<div class="second-area">
+    <ul class="second-nav top-cloud">
+        <li class=""><a href="cloud_index.html">资源监控</a></li>
+        <li class="">
+            <a href="cloud_service_1.html">服务状态</a>
+            <div class="second-sub-nav">
+                <div class=""><a href="cloud_service_1.html">实时会议列表</a></div>
+                <div class=""><a href="cloud_service_2.html">实时与会者列表</a></div>
+                <div class=""><a href="cloud_service_3.html">会议历史记录</a></div>
+                <div class=""><a href="cloud_service_4.html">与会者历史记录</a></div>
+                <div class=""><a href="cloud_service_5.html">历史使用统计</a></div>
+            </div>
+        </li>
+        <li class="cur">
+            <a href="cloud_room_1.html">会议室管理</a>
+            <div class="second-sub-nav">
+                <div class=""><a href="cloud_room_1.html">会议室列表</a></div>
+                <div class="cur"><a href="cloud_room_2.html">新增会议室</a></div>
+                <div class=""><a href="cloud_room_3.html">讲堂列表</a></div>
+                <div class=""><a href="cloud_room_4.html">新增讲堂</a></div>
+                <div class=""><a href="cloud_room_5.html">规格列表</a></div>
+                <div class=""><a href="cloud_room_6.html">自定义规格</a></div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="main-area">
+    <form action="meeting_index.html" class="zj-form" id="zjForm">
+        <div class="">新增会议室</div>
+        <div class="color-area2 mt20">
+            <table class="" width="100%" border="0" cellpadding="0" cellspacing="10">
+                <tr>
+                    <td width="100" align="right">会议室名称</td>
+                    <td width=""><input type="text" class="text" name="room-name" placeholder="" required></td>
+                </tr>
+                <tr>
+                    <td width="100" align="right">会议室描述</td>
+                    <td width=""><input type="text" class="text" name="room-description" placeholder="" required></td>
+                </tr>
+                <tr>
+                    <td width="100" align="right">会议室别名</td>
+                    <td width=""><input type="text" class="text" name="room-bieming" placeholder="" required> <a href="#" class="cyan">新增别名</a></td>
+                </tr>
+                <tr>
+                    <td width="100" align="right">会议室资费</td>
+                    <td width=""><input type="text" class="text" name="room-zifei" placeholder="" required></td>
+                </tr>
+                <tr>
+                    <td width="100" align="right">会议室管理员</td>
+                    <td width=""><input type="text" class="text" name="room-manager" placeholder="" required> <a href="#" class="cyan popwin" data-include="inc1.html" data-title="选择用户">新增用户</a></td>
+                </tr>
+                <tr>
+                    <td width="100" align="right">会议室数量</td>
+                    <td width=""><input type="text" class="text" name="room-num" placeholder="" required></td>
+                </tr>
+            </table>
+        </div>
+        <div class="mt20 tcenter"><input class="btn-lg" type="submit" value="提&nbsp;&nbsp;交"></div>
+    </form>
+</div>
+
+
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.validate.messages.js"></script>
+<script src="js/jquery.placeholder.js"></script><!--使ie支持placeholder属性-->
+
+<!--日期选择-->
+<link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+<script src="http://apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+
+<script src="js/common.js"></script>
+
+</body>
+</html>

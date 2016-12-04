@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <title>视频播放</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/slideout.css">
+    <link rel="stylesheet" href="css/fengyang.css">
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.swiper.min.js"></script>
+    <script src="js/slideout.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <!--html5shiv.min.js must be in head-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<nav id="menu">
+    <div class="tophead">-凤阳网络电视台-</div>
+    <ul class="clearfix mn">
+        <li><a href="cover.html">封面</a></li>
+        <li><a href="index.html">凤阳首页</a></li>
+        <li><a href="fynews.html">凤阳新闻</a></li>
+        <li><a href="sznews.html">时政新闻</a></li>
+        <li><a href="audiolist.html">音频列表</a></li>
+        <li><a href="guangbo.html">广播直播</a></li>
+        <li><a href="video.html">视频播放</a></li>
+        <li><a href="audio.html">音频播放</a></li>
+        <li><a href="yuedu.html">正在阅读</a></li>
+        <li><a href="fenxiang.html">分享</a></li>
+    </ul>
+</nav>
+
+<main id="panel">
+    <div class="logobar">
+        <span class="rback"><a href="#"><span class="song bold">&lt;</span> 返回 </a></span>
+        <span class="f26">正在播放</span>
+        <span class="toggle-button"></span>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="tt">20150403凤阳新闻联播凤阳新闻联播凤阳新闻联播凤阳新闻联播</h1>
+                <div id="videocontainer"></div>
+                <div class="mt">
+                    1939年春天，战争的阴麋笼罩着欧洲大地，憨厚而乐观的犹太青年基度来到了意大利阿雷佐的斯坎小镇准备开一家书店，途中邂逅了年轻美丽的女子多拉，多拉是镇里的小学教师，她的未婚夫是当地的一个纳粹走狗。基度认定多拉是他心中的公主，于是他凭着超人的幽默感和机智勇敢, 最终赢得多拉的爱情，几年后有了可爱的儿子乔舒亚，同时基多也实现了一生中最大的梦想即拥有一家自己的书店，一家三口过着祥和安宁的幸福生活。
+                </div>
+                <div class="mt10">
+                    <div class="red bold">相关链接</div>
+                    <ul class="clearfix vlink">
+                        <li class="omit"><a href="#" class="video">视频名称视频名称视频名称视频名称视频名称视频名称视频名称</a></li>
+                        <li class="omit"><a href="#" class="video">视频名称视频名称视频名称视频名称视频名称视频名称视频名称</a></li>
+                        <li class="omit"><a href="#" class="video">视频名称视频名称视频名称视频名称视频名称视频名称视频名称</a></li>
+                        <li class="omit"><a href="#" class="video">视频名称视频名称视频名称视频名称视频名称视频名称视频名称</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
+
+<script src="js/jquery.videoPlay.js"></script>
+<script>
+    //控制视频播放宽高
+    $(document).ready(function() {
+        $("#videocontainer").videoPlay({
+            src: 'http://db.gxtv.cn/a7240d497ce0c80701c57f1868744fb4/nn_vod.mp4',
+            width: 640,
+            height: 554
+        });
+    });
+</script>

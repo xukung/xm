@@ -1,0 +1,14 @@
+.outwrap_picshow4 { width:550px; margin:0 auto; text-align:center; border:0px solid #CCC; padding:0px;font-size:12px; }
+.outwrap_picshow4 * {margin:0;padding:0;}
+.outwrap_picshow4 .sliderContainer { width:550px; height:320px; position:relative; }
+.outwrap_picshow4 .slider{position:absolute;left:0;top:0;z-index:1;}
+.outwrap_picshow4 .slider li { list-style:none; display:block;position:absolute;left:0;top:0;z-index:1;}
+.outwrap_picshow4 .slider img { width:550px; height:320px; display:block; border:0; }
+.outwrap_picshow4 .description{height:40px; line-height:40px; color:#FFF;position:absolute; left:0px; bottom:0px; width:550px;overflow:hidden; z-index:10; text-align:left;text-indent:10px;background-color:rgba(0,0,0,0.5);}
+
+.outwrap_picshow4 .sliderIcons { position:absolute; left:0px; z-index:2; bottom:-45px; height:45px;}
+.outwrap_picshow4 .sliderIcons li { position:relative;list-style:none;display:inline;float:left; width:24%;color:#fff; height:45px;border:3px solid #000;background:#000;}
+.outwrap_picshow4 .sliderIcons li a{color:#fff;display:block;text-decoration:none;line-height:1.5;height:45px;}
+.outwrap_picshow4 .sliderIcons li img{width:100%;height:45px;border:0;}
+.outwrap_picshow4 .sliderIcons li.cur{border:3px solid #2eb0e6;}
+.outwrap_picshow4 .sliderIcons li.cur span {position:absolute;left:45px;top:-8px;width:10px;height:6px;background:url(../images/picShow/toparrow.gif) no-repeat;}

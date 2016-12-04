@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>焦点图和滚动加载</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/swiper.css"/>
+
+    <script src="js/mobile.js"></script>
+</head>
+
+<body ng-app="loadMoreApp" ng-controller="loadMoreCtrl">
+
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><a class="" href="#"><img src="images/swiper/1.jpg"></a></div>
+        <div class="swiper-slide"><a class="" href="#"><img src="images/swiper/2.jpg"></a></div>
+        <div class="swiper-slide"><a class="" href="#"><img src="images/swiper/3.jpg"></a></div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+</div>
+
+<div class="wrap">
+    <ul class="clearfix plist" id="loadMoreList">
+        <li ng-repeat="x in rdatas">
+            <div class="pic"><a href={{x.href}}><img class="photo" ng-src={{x.imgurl}}></a></div>
+            <div class="title"><a href={{x.href}}>{{x.title}}</a></div>
+            <div class="other">
+                来源：{{x.from}}
+                阅读量：{{x.read}}
+            </div>
+        </li>
+    </ul>
+
+    <div class=""><a href="javascript:void(0);" class="btn btn-block btn-default" id="btnLoadMore">点击加载更多...</a></div>
+    <div id="ajaxTips">正在加载...</div>
+</div>
+
+
+<script src="js/zepto.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper-control.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/underscore.min.js"></script>
+<script src="js/loadMore_angular.js"></script>
+<script>
+    (function () {
+        "use strict";
+        LoadMoreData({
+            dataUrl: './data.json', //加载ajax数据的url地址
+            distance: 500    //当滚动到最底部以上指定像素数时， 加载新内容
+        });
+    })();
+</script>
+</body>
+</html>

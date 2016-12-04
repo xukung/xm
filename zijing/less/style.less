@@ -1,0 +1,134 @@
+@import "common.less";
+@import "checktoggle.less";
+@import "popwindow.less";
+
+/*通用*/
+header{background: #2277b9;height: 60px;display: block;}
+footer{position: fixed;height: 30px;left: 0;right:0;bottom: 0;background: #fff;border-top: 1px solid #ddd;}
+.logo{float: left;}
+.topbar{height: 23px;line-height: 22px;border-bottom: 1px solid #a9c4d9;background: #414042;color: #999;}
+.topbar .fleft{padding:0 10px;}
+.topbar .fright{padding:0 10px;}
+.topbar a{color:#fff;margin: 0 6px;}
+.left-area{position: absolute;top: 60px;bottom: 0;left: 0;width:170px;}
+.second-area{position: absolute;top: 60px;bottom: 0;left: 170px;width: 120px;background: #cdedf9;}
+.main-area{position: absolute;top: 60px;bottom: 30px;left: 290px;right: 0;padding: 30px;overflow: auto;}
+.btn-lg{width: 200px;height: 40px;line-height:40px;background: #f9ae4b;border:0;border-radius: 8px;color: #fff;cursor: pointer;
+  font-size: 18px;font-family: "Microsoft Yahei";text-align: center;display: inline-block;}
+.btn-md{height: 30px;line-height:30px;padding:0 20px;background: #f9ae4b;border-radius: 4px;color: #fff;cursor: pointer;
+  font-size: 14px;font-family: "Microsoft Yahei";text-align: center;border: 1px solid #f9a940;display: inline-block;}
+.btn-sm{height: 22px;line-height:20px;padding:0 20px;background: #f9ae4b;border-radius: 4px;color: #fff;cursor: pointer;
+  font-size: 14px;font-family: "Microsoft Yahei";text-align: center;border: 1px solid #f9a940;}
+.btn-white{background: #fff;color: #999;border: 1px solid #eee;}
+.btn-lg:hover{background: #ff9100;}
+.btn-md:hover{background: #ff9100;}
+.btn-sm:hover{background: #ff9100;}
+.btn-white:hover{background: #f0f0f0;border: 1px solid #ddd;}
+a.btn-lg:hover{color: #fff;text-decoration: none;}
+.zj-form{padding:0 70px;}
+.zj-form .color-area{background: #f8d2a1;padding: 20px;position: relative;}
+.zj-form .color-area2{background: #f0f0f0;padding: 20px;position: relative;}
+.zj-form .fu{position: absolute;top: 30px;right: 30px;width: 140px;height: 200px;padding:10px;background: #f59230;color:#fff;}
+.zj-form .fu .price{position: absolute;width:140px;padding:0 10px;left: 0;bottom: 0;height: 36px;line-height: 36px;background: #000;}
+
+ul.top-domain{margin-top: 20px;}
+ul.top-user{margin-top: 60px;}
+ul.top-renew{margin-top: 180px;}
+ul.top-message{margin-top: 225px;}
+ul.top-meeting{margin-top: 45px;}
+ul.top-cash{margin-top: 75px;}
+ul.top-order{margin-top: 210px;}
+ul.top-terminal{margin-top: 75px;}
+ul.top-cloud{margin-top: 250px;position: relative;left: -15px;}
+
+ul.left-nav{}
+ul.left-nav li{}
+ul.left-nav li a{display: block;height: 30px;line-height: 30px;padding-left: 50px;}
+ul.left-nav li a:hover{text-decoration: none;}
+ul.left-nav li.cur a{color:#20b7ec;border-right: 3px solid #2cbaec;}
+
+ul.second-nav{font-size: 12px;}
+ul.second-nav li{padding-left: 30px;line-height: 30px;}
+ul.second-nav li a{color: #3987c2;}
+ul.second-nav li.cur a{color: #000;}
+ul.second-nav .second-sub-nav{display: none;position: relative;left: 12px;line-height: 24px;}
+ul.second-nav li .second-sub-nav a{color: #3987c2;}
+ul.second-nav li .second-sub-nav .cur a{color: #000;}
+ul.second-nav li.cur .second-sub-nav{display: block;}
+ul.second-nav li .t{position:relative;left: -13px;padding-left: 13px;color: #3987c2;cursor: pointer;}
+ul.second-nav li .fold{ background: url("../images/arrow.png") no-repeat left 10px;}
+ul.second-nav li.cur .fold{ background: url("../images/arrow.png") no-repeat left -12px;}
+ul.second-nav li .c{display: none;padding-left: 10px;}
+ul.second-nav li .c a{display: block;color: #3987c2;}
+ul.second-nav li .c a.cur{color: #000;}
+ul.second-nav li.cur .c{display: block;}
+
+/*其它*/
+.box-module{border: 1px solid #ddd;}
+.box-module .title{height: 30px;line-height: 30px;background: #f0f0f0;padding: 0 10px;color: #666;}
+.box-module .content{padding: 20px;}
+.login-body{background: url("../images/bg_login.jpg") no-repeat center center;background-size: cover;}
+.login-box{position:absolute;left: 50%;top: 50%;width:325px;margin-left: -130px;margin-top: -150px;
+  border: 8px solid #c1d2d4;background: #fff;padding: 30px 25px; }
+.login-wrapper2{position: relative;width:100%;height: 396px; background: url("../images/bg_login2.jpg") no-repeat left top;}
+.login-box2{position:absolute;left: 60%;top: 50px;width:265px;}
+.login-wrapper3{position: relative;width:100%;height: 396px; background: url("../images/bg_login3.jpg") no-repeat center top;background-size: 100% 396px;}
+.login-box3{position:absolute;left: 50%;top: 50px;width:400px;margin-left: -130px;}
+.login-box4{position:absolute;left: 50%;top: 50%;width:265px;margin-left: -130px;height: 300px;margin-top: -150px;}
+.shichang{border: 1px solid #ddd;}
+.shichang span.all{display: inline-block;padding: 0 6px;height: 30px;line-height: 30px;cursor: pointer;}
+.shichang span.inner{display: none;}
+.shichang span.cur{background: #a7a9ac;color: #fff;}
+.shichang span.cur .inner{display: inline;}
+.icon-gift{display: inline-block;width: 11px;height: 12px;background: url("../images/icon-gift.png") no-repeat;margin-right: 3px;}
+input.dateWidth{width: 100px;}
+select.jiaoyi{height: 40px;line-height: 40px;width: 100px;}
+select.sel{height: 40px;line-height: 40px;width: 260px;}
+.gray-btn{display: inline-block;height: 28px;line-height: 28px;padding:0 30px;text-align:center;background: #f0f0f0;cursor: pointer;}
+.gray1{background: #ddd;}
+.gray2{background: #e6e6e6;}
+.tags a,.tags span{cursor: pointer;}
+.tags .cur{background: #f8d2a1;}
+.bank-wrap label img{border: 1px solid #ddd;margin-right: 10px;margin-bottom: 10px;cursor: pointer;}
+.box{border: 1px solid #ddd;width: 520px;min-height: 300px;margin: 20px auto 0 auto;position: relative;}
+.box2{width: 860px;margin: 20px auto 0 auto;}
+.gray-tags{height: 30px;line-height: 30px;background: #eee;}
+.gray-tags span{display: inline;float: left;width: 33.3%;text-align: center;border-right: 1px solid #ccc;}
+.gray-tags span:last-child{border-right: 0;}
+.blue-btns{position: absolute;left: 0;bottom: 0;}
+.blue-btns a{float: left;height: 40px;line-height: 40px;border:2px solid #fff;width: 259px;background: #cef;text-align: center;}
+.gray-bar{background: #eee;height: 40px;line-height: 40px;padding: 0 20px;}
+.col_1732_1{width:170px;}
+.col_1732_2{width:670px;}
+.box-chart{border:1px solid #ddd;}
+.box-chart .title{height: 30px;line-height: 30px;background: #eee;text-align: center;}
+.box-chart .content{padding: 5px;height: 190px;overflow: auto;}
+.video-area{height: 334px;background: #000;border: 1px solid #000;position: relative;}
+.video-container{margin: 60px auto 10px auto;background: #111;width: 250px;height: 140px;}
+.btn-circle{margin-top: 50px;text-align: center;}
+.btn-circle a{display: inline-block;width: 50px;height: 50px;border-radius:50px;line-height:50px;border:1px solid #999;
+  text-align: center;color: #fff;margin: 0 20px;}
+.btn-circle a:hover{color:#f80;text-decoration: none;}
+.btn-fullscr{position: absolute;right: 40px;bottom: 40px;}
+.btn-fullscr a{display: inline-block;width: 40px;height: 40px;line-height:40px;text-align: center; background: #f80;}
+.btn-fullscr a:hover{text-decoration: none;color: #fff;}
+table.layout1102{}
+table.layout1102 td{padding: 6px;}
+tr.qiang{background: #f8d2a1;}
+ul.zhd{}
+ul.zhd li{float: left;width: 250px;height: 250px;margin: 0 20px;text-align: center;}
+ul.zhd .pic img{border: 1px solid #ddd;padding: 4px;}
+ul.zhd .txt{margin: 10px 0;}
+
+.scan-wrapper{position: relative;width:100%;min-height:550px; background: url("../images/bg_login3.jpg") no-repeat center top;background-size: 100% 100%;}
+.scan-box{width:600px;margin: 0 auto;}
+.scan-box .tt{font-size: 26px;text-align: center;padding: 40px 0;}
+.scan-box .info{font-family:"宋体";margin-left: 100px;}
+.scan-box .blue-area{background: #cdedf9;padding: 20px 100px;color: #444;}
+
+table.data .not-read{font-weight: bold;}
+table.data .not-read .message-status{display: inline-block;width: 14px;height: 14px;
+  background: url("../images/bg_icon_mail.png") no-repeat left top;}
+table.data .readed{font-weight: normal;}
+table.data .readed .message-status{display: inline-block;width: 14px;height: 14px;
+  background: url("../images/bg_icon_mail.png") no-repeat left bottom;}

@@ -1,0 +1,7 @@
+.outwrap_photoPics9 {margin-top:15px;}
+.outwrap_photoPics9 .sLeftPhoto,
+.outwrap_photoPics9 .sRightPhoto{cursor:pointer;}
+.outwrap_photoPics9 .photoPics{width:140px;overflow:hidden;}
+.outwrap_photoPics9 .photoPics td{padding:0;}
+.outwrap_photoPics9 .photoPics img{border:1px solid #ddd;width:138px;height:138px;}
+.outwrap_photoPics9 .photoPics .name{font-size:12px;text-align:center;margin-top:15px;}

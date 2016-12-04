@@ -1,0 +1,152 @@
+@import url(common.css);
+
+/*header*/
+.toplink{height:30px;line-height:30px;background: #f5f5f5;}
+.toplink .icons{display:inline;float:right;margin-top: 8px;margin-right: 450px;}
+.toplink .icons a{display:inline;float:left;width:16px;height:16px;background:url(../images/icons.gif) no-repeat;margin-right:8px;line-height:1.5;}
+.toplink .icons a.i1{background-position:0 0;}
+.toplink .icons a.i2{background-position:0 -16px;}
+.toplink .icons a.i3{background-position:0 -32px;}
+.toplink .icons a.i4{background-position:0 -48px;}
+.toplink .icons a.i5{background-position:0 -64px;padding-left:18px;width:auto;}
+.logobar{height:100px;clear:both;background: url("../images/bg_topbar_guiyang.png") repeat-x;}
+.logobar .logo{display:inline;float:left;}
+.logobar .rlink{float: right;width: 290px;margin-right: 50px;margin-top: 5px;}
+.logobar .rlink a{display: inline;float: left;width: 110px;border: 1px solid #ddd;margin-top: 5px;margin-right: 5px;}
+.logobar a.i_fy{padding-left: 27px;background: url("../images/icons/icon_fengyang.png") no-repeat 4px center;}
+.logobar a.i_tv{padding-left: 27px;background: url("../images/icons/tvicon5.jpg") no-repeat 4px center;}
+.logobar a.i_weibo{padding-left: 27px;background: url("../images/icons/tvicon4.png") no-repeat 4px center;}
+.logobar a.i_weixin{padding-left: 27px;background: url("../images/icons/tvicon1.png") no-repeat 4px center;}
+.logobar a.i_android{padding-left: 27px;background: url("../images/icons/tvicon2.png") no-repeat 4px center;}
+.logobar a.i_ios{padding-left: 27px;background: url("../images/icons/tvicon3.png") no-repeat 4px center;}
+nav {  height: 40px;  line-height: 40px;  background: url("../images/bg_nav_guiyang.png") repeat-x;
+    font-size: 15px;  clear: both;  }
+nav a{float: left;height: 40px;padding: 0 10px 0 8px;background: url("../images/fenge_nav_guiyang.png") no-repeat right top;
+font-family: "Microsoft Yahei";}
+nav a:last-child{background: none;}
+nav a:link, nav a:visited {  color: #fff;  }
+nav a:hover {  color: #ff0;  text-decoration: none;  }
+nav a.cur {  color: #ff0;  font-weight: bold;  }
+
+
+/*footer*/
+footer{margin-bottom:20px;}
+.youqing{width:80px;height:50px;line-height:50px;font-size:14px;font-family:"微软雅黑";color:#c00;text-align:center;}
+
+
+/*通用*/
+a.red:link,a.red:visited{color:#d00;}
+a.arrow{padding-left: 10px;background: url("../images/arrow_yellow.png") left 3px no-repeat;}
+a.pic{padding-left: 20px;background: url("../images/icons/icon_pic.png") left top no-repeat;}
+a.video{padding:4px 0 4px 23px;background: url("../images/icon_video2_fy.gif") left 5px no-repeat;}
+.mt{margin-top: 10px;}
+.box{clear:both;border:1px solid #ddd;}
+.title{height:40px;line-height:40px;margin:0 10px;*padding:0 10px; border-bottom: 3px solid #ddd;}
+.title .name{display:inline;float:left;font-size:16px;font-family:"微软雅黑";color:#d00;}
+.title .more{display:inline;float:right;}
+.title .tags{display:inline;float:right;}
+.title .tags a{display:inline;float:left;padding:0 5px 0 5px;}
+.title .tags a:hover{text-decoration:none;}
+.title .tags a.cur{border-bottom:2px solid #f90;}
+.title .fright{line-height: 32px;padding-top: 3px;}
+.content{padding:10px;}
+.title2{height:40px;line-height:40px;padding:0 20px;color: #e00;}
+.title2 a{color: #e00;}
+.title2 .name{float: left;font-size: 14px;}
+.title2 .more{float: right;}
+.content2{padding: 10px 0;}
+
+
+
+/*桂阳*/
+.col_2041_1{width:590px;}
+.col_2041_2{width:408px;height:440px;background: #f3f3f3 url(../images/bg_xinwen_guiyang.png) no-repeat right bottom;}
+.col_1649_1{width:600px;}
+.col_1649_2{width:390px;}
+.col_1653_1{width:660px;}
+.col_1653_2{width:330px;}
+.col_1702_1{width:55%;}
+.col_1702_2{width:40%;}
+.col_1712_1{width:480px;}
+.col_1712_2{width:210px;margin-left: 10px;}
+.col_1712_3{width:250px;}
+.title-guiyang{height: 44px;line-height: 44px;background: url("../images/bg_title_guiyang.png") repeat-x;margin: 0;
+    padding: 0 10px;border-bottom: 0;}
+.title-guiyang .name{height: 44px;border-bottom: 2px solid #db4701;padding: 0 10px;position: relative;margin-left: -10px;}
+.box > div .title{border: 0;}
+.tt-in{float: left;width: 90px;height: 20px;line-height: 20px;background: #f60;color: #fff;text-align: center;}
+.linkbar{height:40px;line-height:40px;background:#104c94;padding:0 30px;position:relative;}
+.linkbar .totop a{padding-left:20px;background:url(../images/totop.jpg) no-repeat left 2px;color:#fff;font-size:14px;position:absolute;right:30px;top:12px;line-height:1.2;}
+.linkbar .lk{color:#fff;}
+.linkbar .lk a{color:#fff;margin:0 10px;}
+.returnBack{display: inline-block;width: 14px;height: 14px;background:url('../images/back.png') no-repeat left center;vertical-align: middle;}
+.videotitle{margin:20px auto;text-align:center;}
+.toutiao{border:1px solid #ccc;background: #f3f3f3;padding: 10px;text-align: center;font-size: 14px;position: relative;}
+.toutiao .plus{position: absolute;left: -1px;top:-1px;}
+.toutiao .bigone{font-family: "Microsoft YaHei";font-size: 26px;font-weight: bold;}
+.toutiao a{color:#046;}
+.toutiao .more{position: absolute;right: 10px;bottom: 10px;}
+
+ul.rongcheng{}
+ul.rongcheng li{padding: 3px 0;}
+
+ul.sz{}
+ul.sz li{padding:10px 5px 8px 25px;line-height: 1.5em; background: url("../images/icon_video_wsh.png") no-repeat left 12px;}
+ul.sz .f14b{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;margin-bottom: 4px;}
+
+ul.xch{}
+ul.xch li{float: left;width: 46%;*width: 45%;margin: 20px 2%;line-height: 1.5em; }
+ul.xch .txt{float: left;width: 180px;}
+ul.xch .txt .tt{font-size: 14px;font-weight: bold;}
+ul.xch .txt .tt a{color: #175f85;}
+ul.xch .pic{float: right;}
+
+ul.vlist{}
+ul.vlist li{float: left;width: 140px;height: 140px;margin-right:20px;}
+
+ul.vlist2{width: 262px;}
+ul.vlist2 li{float: left;width: 110px;height: 95px;margin-right:20px;}
+
+ul.vlist3{padding-left: 12px;width: 370px;}
+ul.vlist3 li{float: left;width: 160px;height: 130px;margin-right:20px;}
+ul.vlist3 li img{margin-bottom: 3px;}
+
+ul.vlist4{}
+ul.vlist4 li{display: inline;float: left;width: 290px;height: 80px;padding:15px 10px;border: 1px solid #eee;
+    border-top:5px solid #eee;margin: 10px;}
+ul.vlist4 .pic{display: inline;float:left;}
+ul.vlist4 .txt{display: inline;float: left;margin-left: 10px;line-height:2em;}
+ul.vlist4 .txt a{font-weight: bold;}
+
+ul.tv{}
+ul.tv li{float: left;width: 175px;height: 170px;margin: 0 10px;}
+ul.tv .tt{font-size: 14px;font-weight: bold;color: #f06224;text-indent: 10px;}
+
+ul.fw{padding-left: 8px;}
+ul.fw li{display: inline;float: left;width:85px;height: 75px;margin: 0 6px;}
+
+ul.zx{}
+ul.zx li{display: inline;float: left;width: 285px;height: 166px;margin: 10px 15px 20px;border-top: 2px solid #ddd;line-height: 2em;}
+ul.zx li .oneline{height: 1.8em;}
+ul.zx .clearfix{height: 50px;line-height: 50px;}
+ul.zx li .fleft{font-size: 16px;font-family: "Microsoft Yahei";}
+
+ul.zhuanti{width: 1000px;}
+ul.zhuanti li{display: inline;float: left;width: 160px;margin: 0 17px;}
+ul.zhuanti a{color: #3a63a4;}
+
+ul.video4{}
+ul.video4 li{display: inline;float: left;width: 31%;margin: 5px 1%;height: 40px;}
+ul.video4 a{display: block;border: 1px solid #ddd;height: 38px;line-height: 38px;}
+ul.video4 a .icon{float:left;width: 30px;height: 38px;border-right: 1px solid #ddd;
+    background: url("../images/icon_gb.gif") no-repeat center center;}
+ul.video4 a .tt{padding: 0 10px;font-size: 14px;font-weight: bold;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+ul.video4 a:hover{background: #f0f0f0;}
+
+ul.shuhua{}
+ul.shuhua li{display: inline;float: left;width: 300px;height: 240px;margin: 0 13px;}
+ul.shuhua .txt{font-size: 14px;font-weight: bold;text-align: center;margin-top: 4px;}
+
+ul.xw{padding-left: 8px;}
+ul.xw li{display: inline;float: left;width: 170px;height: 160px;margin: 0 13px;}
+ul.xw .txt{margin-top: 3px;}

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <title>新增会议室</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glyphicon.css">
+
+    <!--html5shiv.min.js must be in head-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/selectivizr.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<header>
+    <div class="logo"><a href="#"><img class="" src="images/logo_zijing.jpg"></a></div>
+    <div class="topbar clearfix">
+        <div class="fleft">管理控制台 &gt; 会议管理 &gt; <span class="cyan">新增会议室</span></div>
+        <div class="fright"><a href="#">帮助</a> | <a href="#">客服</a> | <a href="#">David@163.com</a></div>
+    </div>
+</header>
+
+<div class="left-area">
+    <div class="tcenter pad10 gray">管理控制台</div>
+    <ul class="left-nav">
+        <li><a href="domain_index.html">域名管理</a></li>
+        <li><a href="user_index.html">用户管理</a></li>
+        <li class="cur"><a href="meeting_index.html">会议管理</a></li>
+        <li><a href="terminal_index.html">终端管理</a></li>
+        <li><a href="cash_index.html">账务管理</a></li>
+        <li><a href="renew_index.html">续费管理</a></li>
+        <li><a href="order_index.html">工单管理</a></li>
+        <li><a href="message_index.html">消息管理</a></li>
+        <li><a href="cloud_index.html">专属云管理</a></li>
+    </ul>
+</div>
+
+<div class="second-area">
+    <ul class="second-nav top-meeting">
+        <li><a href="meeting_index.html">会议室列表</a></li>
+        <li><a href="meeting_jiangtang.html">讲堂列表</a></li>
+        <li class="cur"><a href="meeting_add.html">新增会议室</a></li>
+        <li><a href="meeting_add_jiangtang.html">新增讲堂</a></li>
+        <li><a href="meeting_expire.html">将过期列表</a></li>
+    </ul>
+</div>
+
+<div class="main-area">
+    <form action="meeting_index.html" class="zj-form" id="zjForm">
+        <div class="">新增会议室</div>
+        <div class="color-area mt20">
+            <table class="" width="100%" border="0" cellpadding="0" cellspacing="10">
+                <tr>
+                    <td width="100" align="right">会议室名称</td>
+                    <td width=""><input type="text" class="text" name="room-name" placeholder="" required></td>
+                </tr>
+                <tr>
+                    <td width="100" align="right">会议室描述</td>
+                    <td width=""><input type="text" class="text" name="room-description" placeholder="" required></td>
+                </tr>
+                <tr>
+                    <td width="100" align="right">会议室管理员</td>
+                    <td width=""><input type="text" class="text" name="room-manager" id="room-manager" placeholder="" required> <a href="#" class="cyan popwin" data-include="inc1.html" data-title="选择用户">选择用户</a></td>
+                </tr>
+                <tr>
+                    <td width="100" align="right">会议室类型</td>
+                    <td width=""><input type="text" class="text" name="room-type" id="room-type" placeholder="" required> <a href="#" class="cyan popwin" data-include="inc2.html" data-title="选择类型">选择类型</a></td>
+                </tr>
+                <tr>
+                    <td width="100" align="right">自动续费</td>
+                    <td width="">
+                        是 <input type="radio" name="xufei" class="checktoggle" id="radio1" checked><label for="radio1"></label> &nbsp;&nbsp;&nbsp;&nbsp;
+                        否 <input type="radio" name="xufei" class="checktoggle" id="radio2"><label for="radio2"></label>
+                    </td>
+                </tr>
+            </table>
+            <div class="fu">
+                <div class="">当前配置：</div>
+                <div class="">方数..........10</div>
+                <div class="">突发方数.......10</div>
+                <div class="price clearfix">
+                    <div class="fleft">价格</div>
+                    <div class="fright">1800</div>
+                </div>
+            </div>
+        </div>
+        <div class="mt20">
+            <table class="" width="100%" border="0" cellpadding="0" cellspacing="20">
+                <tr>
+                    <td width="120" align="right">购买时长：</td>
+                    <td width="">
+                        <div class="shichang">
+                            <span class="all cur">1<span class="inner">个月</span></span>
+                            <span class="all">2<span class="inner">个月</span></span>
+                            <span class="all">3<span class="inner">个月</span></span>
+                            <span class="all">4<span class="inner">个月</span></span>
+                            <span class="all">5<span class="inner">个月</span></span>
+                            <span class="all">6<span class="inner">个月</span></span>
+                            <span class="all">7<span class="inner">个月</span></span>
+                            <span class="all">8<span class="inner">个月</span></span>
+                            <span class="all">9<span class="inner">个月</span></span>
+                            <span class="all">10<span class="inner">个月</span></span>
+                            <span class="all">11<span class="inner">个月</span></span>
+                            <span class="all">12<span class="inner">个月</span></span>
+                            <span class="all"><span class="icon-gift"></span>1年</span>
+                            <span class="all"><span class="icon-gift"></span>2年</span>
+                            <span class="all"><span class="icon-gift"></span>3年</span>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="mt20 tcenter"><input class="btn-lg" type="submit" value="提&nbsp;&nbsp;交"></div>
+    </form>
+</div>
+
+
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.validate.messages.js"></script>
+<script src="js/jquery.placeholder.js"></script>
+<script src="js/jquery.popwindow.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

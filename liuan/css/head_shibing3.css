@@ -1,0 +1,25 @@
+/*header*/
+header{}
+.toplink{height:25px;line-height:25px;background:#fff;}
+.toplink .icons{position:absolute;left:400px;top:2px;}
+.toplink .icons a{display:inline;float:left;width:16px;height:16px;background:url(../images/icons.gif) no-repeat;margin-right:8px;line-height:1.5;}
+.toplink .icons a.i1{background-position:0 0;}
+.toplink .icons a.i2{background-position:0 -16px;}
+.toplink .icons a.i3{background-position:0 -32px;}
+.toplink .icons a.i4{background-position:0 -48px;}
+.toplink .icons a.i5{background-position:0 -64px;padding-left:18px;width:auto;}
+.logobar{height:155px;clear:both;background:#f1f1f1 url(../images/bg_header_shibing3.jpg) no-repeat center bottom;}
+.logobar .logo{display:inline;float:left;height:94px;position:relative;margin-top:20px;}
+.logobar .search{display:inline;float:left;width:380px;margin-left:40px;margin-top:40px;}
+.logobar input.stxt{display:inline;float:left;width:285px;height:34px;line-height:34px;border:1px solid #ccc;padding:0 5px;}
+.logobar input.btn{display:inline;float:left;width:64px;height:36px;background:url(../images/search.jpg) no-repeat;border:0;cursor:pointer;text-indent:-9999px;}
+.logobar ul.pics{width:220px;display:inline;float:right;margin-top:20px;}
+.logobar ul.pics li{display:inline;float:left;margin-right:8px;margin-bottom:5px;width:100px;height:20px;border:1px solid #ccc;}
+.logobar ul.pics li img{display:block;}
+nav{font-size:14px;color:#7dc6e3;font-family:"微软雅黑";clear:both;text-align:center;background:#0295da;border-top:2px solid #0188ca;padding:10px 0;}
+nav td{font-size:14px;}
+nav a {margin:0 5px;}
+nav a:link,nav a:visited {color:#fff;}
+nav a:hover {color:#ff0;text-decoration:none;}
+nav a.cur{color:#ff0;font-weight:bold;}
+

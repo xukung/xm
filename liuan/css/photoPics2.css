@@ -1,0 +1,7 @@
+.sLeftPhoto{display:block;cursor:pointer;background:url(../images/arrow417_left2.jpg) no-repeat left top;width:35px;height:24px;border-right:1px solid #ddd;position:absolute;right:55px;top:-30px;}
+.sRightPhoto{display:block;cursor:pointer;background:url(../images/arrow417_right2.jpg) no-repeat left top;width:35px;height:24px;position:absolute;right:20px;top:-30px;}
+.sLeftPhoto:hover,.sRightPhoto:hover{background-position:left bottom;}
+.photoPics{width:980px;height:160px;overflow:hidden;}
+.photoPics td{padding:0 15px;text-align:center;}
+
+

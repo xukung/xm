@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="js/html5shiv.min.js"></script>
+<![endif]-->
+
+<meta charset="utf-8">
+<title>星睿教育</title>
+
+
+<script src="js/jquery-1.8.3.min.js"></script>
+
+<link href="css/xingrui.css" rel="stylesheet" type="text/css">
+<link href="css/popup.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.XYTipsWindow.2.8.js"></script>
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+<a id="regBtn" href="#">立即注册</a>
+<a id="closeBtn" href="#">关闭</a>
+
+
+<script type="text/javascript">
+ $(document).ready(function() {
+	$("#closeBtn").click(function(){
+		$.XYTipsWindow.removeBox();
+	});
+	$("#regBtn").click(function(){
+		$.XYTipsWindow({
+			___width:500,
+			___height:400,
+			___title:"注册星睿",
+			___drag:"___boxTitle",
+			___offsets:"middle-middle",
+			___showbg:true,
+			___showTitle:true,
+			___content:"id:reg"
+		});
+	});
+ })
+ </script>
+
+
+
+<div id="reg" style="display:none;">
+  <div class="padcon">
+    <div class="regtop">
+      <span class="orange">手机注册星睿用户</span>即获得<span class="orange">19元课程优惠券</span> 可直接<span class="orange">0元购课</span>！
+      </div>
+      <form>
+        <table width="100%" border="0" cellspacing="10" cellpadding="0" class="">
+            <tr>
+              <td align="right" valign="top"> 手机： </td>
+              <td valign="top"><input name="" type="text" class="text"> <span class="gray">作为登录的帐号</span></td>
+            </tr>
+            <tr>
+              <td width="20%" align="right" valign="top">密码：</td>
+              <td width="80%" valign="top"><input name="" type="text" class="text"> <span class="gray">6-16个字符，字母区分大小写</span></td>
+            </tr>
+            <tr>
+              <td align="right" valign="top">用户名：</td>
+              <td valign="top"><input name="" type="text" class="text"> <span class="gray">可以输入数字、字母、汉字、下划线</span></td>
+            </tr>
+            <tr>
+              <td align="right" valign="top">图形验证码：</td>
+              <td valign="top"><input name="" type="text" class="text" style="width:100px;"> <img class="" src="images/halftransparent.png" width="50" height="20"></td>
+            </tr>
+            <tr>
+              <td align="right" valign="top">短信验证码：</td>
+              <td valign="top"><input name="" type="text" class="text" style="width:100px;"> <input value="发送手机验证码" name="" type="button"></td>
+            </tr>
+            <tr>
+              <td align="right" valign="top">&nbsp;</td>
+              <td valign="top"><input name="" type="checkbox" value="">阅读并已同意<a class="orange" href="#">《星睿网用户及会员协议》</a></td>
+            </tr>
+            <tr>
+              <td align="right" valign="top">&nbsp;</td>
+              <td valign="top">
+              	<a class="fleft" href="#"><img class="" src="images/lijizhuce.jpg"></a>
+              	<span class="fleft">&nbsp;&nbsp;&nbsp;&nbsp;已有星睿帐号，<a class="orange" href="#">直接登录&gt;&gt;</a></span>
+              </td>
+            </tr>
+        </table>
+      </form>
+      <div class="hr2"></div>
+      <div class="tcenter">
+          <div class="">使用社交帐号直接登录：</div>
+          <div class=""><a class="" href="#"><span class=""><img class="" src="images/icons/weibo.jpg"></span> 新浪微博帐号</a> <a class="" href="#"><span class=""><img class="" src="images/icons/weixin.jpg"></span> 星睿官方微信</a> <a class="" href="#"><span class=""><img class="" src="images/icons/qq.jpg"></span> QQ号</a></div>
+      </div>
+  </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+/*module*/
+
+
+ul.plist {
+}
+
+ul.plist li {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  line-height: 1.5em;
+}
+
+ul.plist li div {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+ul.plist .other {
+  font-size: 14px;
+  color: #999;
+}
+
+ul.plist .pic {
+  height: 6rem;
+  overflow: hidden;
+}
+
+ul.plist .pic img {
+  width: 100%;
+  min-height: 6rem;
+}
+

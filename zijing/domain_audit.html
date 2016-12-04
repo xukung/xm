@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <title>待审核域名</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--html5shiv.min.js must be in head-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/selectivizr.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<header>
+    <div class="logo"><a href="#"><img class="" src="images/logo_zijing.jpg"></a></div>
+    <div class="topbar clearfix">
+        <div class="fleft">管理控制台 &gt; 域名管理 &gt; <span class="cyan">待审核域名</span></div>
+        <div class="fright"><a href="#">帮助</a> | <a href="#">客服</a> | <a href="#">David@163.com</a></div>
+    </div>
+</header>
+
+<div class="left-area">
+    <div class="tcenter pad10 gray">管理控制台</div>
+    <ul class="left-nav">
+        <li class="cur"><a href="domain_index.html">域名管理</a></li>
+        <li><a href="user_index.html">用户管理</a></li>
+        <li><a href="meeting_index.html">会议管理</a></li>
+        <li><a href="terminal_index.html">终端管理</a></li>
+        <li><a href="cash_index.html">账务管理</a></li>
+        <li><a href="renew_index.html">续费管理</a></li>
+        <li><a href="order_index.html">工单管理</a></li>
+        <li><a href="message_index.html">消息管理</a></li>
+        <li><a href="cloud_index.html">专属云管理</a></li>
+    </ul>
+</div>
+
+<div class="second-area">
+    <ul class="second-nav top-domain">
+        <li><a href="domain_index.html">域名列表</a></li>
+        <li><a href="domain_add.html">新增域名</a></li>
+        <li class="cur"><a href="domain_audit.html">待审核域名</a></li>
+    </ul>
+</div>
+
+<div class="main-area">
+    <table class="data" width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <th width="10%" valign="top">序号</th>
+            <th width="30%" valign="top">域名</th>
+            <th width="30%" valign="top">状态</th>
+            <th width="30%" valign="top">操作</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>www.163.com</td>
+            <td>未审核</td>
+            <td>
+                <a href="#" class="red" onclick="delConfirm({id:2,info:'www.163.com',redirect:'domain_audit.html'})">删除</a> &nbsp;
+                <a href="#" class="cyan">编辑</a> &nbsp;
+                <a href="#" class="green">默认域名</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.validate.messages.js"></script>
+<script src="js/jquery.placeholder.js"></script><!--使ie支持placeholder属性-->
+<script src="js/common.js"></script>
+
+</body>
+</html>

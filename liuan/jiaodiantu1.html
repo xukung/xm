@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>面向对象焦点图轮播</title>
+
+
+
+<script src="js/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+
+<!--焦点图1 begin----------------------------------------------------------->
+<article>
+<link href="css/picShow.css" rel="stylesheet" type="text/css">
+<!--[if IE]>
+<link href="css/picShow_ie.css" rel="stylesheet" type="text/css">
+<![endif]-->
+
+<script src="js/jquery.picShow.js"></script>
+<script>
+$(document).ready(function() {
+	$("#focus1").picShow({
+        step: 3000,
+        picWidth: 660,
+		picHeight: 345
+    });
+});
+</script>
+
+<div class="outwrap_picshow" id="focus1">
+  <div class="sliderContainer">
+    <ul class="slider">
+      <li>
+          <a href=""><img src="images/picShow/1.jpg"/></a>
+          <div class="description">文本描述信息，让人不禁感叹1</div>
+      </li>
+      <li>
+          <a href=""><img src="images/picShow/2.jpg"/></a>
+          <div class="description">文本描述信息，让人不禁感叹2</div>
+      </li>
+      <li>
+          <a href=""><img src="images/picShow/3.jpg"/></a>
+          <div class="description">文本描述信息，让人不禁感叹3</div>
+      </li>
+      <li>
+          <a href=""><img src="images/picShow/4.jpg"/></a>
+          <div class="description">文本描述信息，让人不禁感叹4</div>
+      </li>
+      <li>
+          <a href=""><img src="images/picShow/5.jpg"/></a>
+          <div class="description">文本描述信息，让人不禁感叹5</div>
+      </li>
+    </ul>
+    <ul class="sliderIcons">
+    	<li>1</li>
+    	<li>2</li>
+    	<li>3</li>
+    	<li>4</li>
+    	<li>5</li>
+    </ul>
+   </div>
+</div>
+</article>
+<!--焦点图1 end----------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

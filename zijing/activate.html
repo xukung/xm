@@ -1,0 +1,322 @@
+<!DOCTYPE HTML>
+<html lang="en" class="blanknav clouds">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  
+  <title>Videome</title>
+
+    <link href="css/smacss.css" rel="stylesheet">
+</head>
+<body>
+
+  
+<div id="header">
+  <h1>设置您的视频系统</h1>
+</div>
+
+  
+  
+<div class="container container-medium">
+  
+  <h3>终端信息</h3>
+  <table class="details">
+    <tbody>
+      <tr>
+        <th>显示名称</th>
+        <td>Test Endpoint</td>
+      </tr>
+      <tr>
+        <th>视频地址</th>
+        <td>testep@videome.cn</td>
+      </tr>
+      
+      <tr>
+        <th>计划</th>
+        <td>Plus</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="container container-medium firewall-tests" data-bind="visible: browser.neverJava" style="display:none">
+  <div class="boxed">
+    <h3>Java在这个平台上不可用</h3>
+    <p>
+      需要Java完成激活。由于Java在你目前的平台上不可用，我们建议你使用一台电脑或苹果来完成这个操作。
+    </p>
+  </div>
+</div>
+<div class="container container-medium firewall-tests" data-bind="visible: step() && !browser.neverJava" style="display:none">
+  <div class="boxed">
+    <h3 data-bind="text: stepText">加载应用；</h3>
+    <p data-bind="visible: step()=='load'">
+      <em>请稍候，Java小程序正在加载。</em>
+    </p>
+    <!-- ko if: step()=='ready' -->
+    <h3>重要</h3>
+    <p>
+      请在开始之前，退出全部的VPN连接，请确保您的电脑和视频终端在同一网络（LAN）中。
+    </p>
+    <button type="button" class="btn btn-primary btn-lg"
+            data-bind="click: startScan">
+      运行
+    </button>
+    <p style="margin-top:10px;">
+      点击<a href="#" data-bind="click: manualIpModal"> 这里 </a>如果你知道终端的IP地址。
+    </p>
+    <!-- /ko -->
+    <!-- ko if: step()=='scanning' -->
+    <em data-bind="html: stateText"></em>
+    <div class="progress">
+      <div class="progress-bar" data-bind="attr:{style:progress}" style="width:0">
+      </div>
+    </div>
+    <p>
+      扫描完成后会出现的视频终端的列表。
+    </p>
+    <!-- /ko -->
+    <!-- ko if: step()=='scanned' -->
+    <em data-bind="html: stateText"></em>
+    <div class="alert alert-block" data-bind="visible: codecs().length==0">
+      扫描后未发现视频终端。
+      点击<a href="#" data-bind="click: manualIpModal"> 这里 </a>如果你知道终端的IP地址。
+    </div>
+    <div class="" data-bind="visible: codecs().length>0">
+      通过网络扫描发现以下视频终端。列表中无法找到你的视频终端？
+      点击<a href="#" data-bind="click: manualIpModal"> 这里 </a>如果你知道终端的IP地址。
+    </div>
+    <div data-bind="foreach:codecs" class="codecs">
+      <button type="button" class="btn"
+              data-bind="click: activate"
+              rel="tooltip" title="Activate subscription">
+        <h5 data-bind="text: name"></h5>
+        <table class="details">
+          <tbody>
+            <tr>
+              <th>IP地址</th>
+              <td data-bind="text:ip"></td>
+            </tr>
+            <tr>
+              <th>制造商</th>
+              <td data-bind="text:manufacturer"></td>
+            </tr>
+            <tr>
+              <th>软件版本</th>
+              <td data-bind="text:swVersion"></td>
+            </tr>
+          </tbody>
+        </table>
+      </button>
+    </div>
+    <!-- /ko -->
+    <!-- ko if: step()=='activating' -->
+    <em data-bind="html: stateText"></em>
+    <div class="progress">
+      <div class="progress-bar" data-bind="attr:{style:progress}" style="width:0">
+      </div>
+    </div>
+    <!-- /ko -->
+    <!-- ko if: step()=='failed'||step()=='error' -->
+    <em data-bind="html: stateText"></em>
+    <div class="alert alert-danger">
+      <h3>
+        <i class="icon-exclamation"></i>
+        未能激活视频终端
+      </h3>
+    </div>
+    <!-- /ko -->
+    <!-- ko if: step()=='success' -->
+    <p>
+      视频终端现在已被激活，已经准备好呼叫和接收呼叫。
+    </p>
+    <!-- /ko -->
+  </div>
+</div>
+<div class="container container-medium ">
+  
+  <button type="button" class="btn secondary pull-right" style="display:none"
+          data-bind="visible: !browser.neverJava, click:restart">
+    重新启动终端激活
+  </button>
+</div>
+
+<div class="modal" id="dlg-placeholder-manual">
+  <h4>手工输入视频终端IP地址</h4>
+  <form class="form-horizontal" data-bind="submit: manualIpActivate">
+    <div class="control-group">
+      <label class="control-label">IP地址</label>
+      <input type="text" class="form-control" autofocus
+             data-bind="value: manualIpAddress,
+                        valueUpdate: 'afterkeydown'">
+    </div>
+  </form>
+  <button type="button" onClick="modal('#dlg-placeholder-manual', { close: true })" aria-hidden="true"
+          class="btn">
+    取消
+  </button>
+  <button type="button" class="btn"
+          data-bind="click: manualIpActivate,
+                     enable: manualIpAddress">
+    激活
+  </button>
+</div>
+
+<div class="modal" id="dlg-auth">
+  <h3>需要验证</h3>
+  <p>
+    视频终端需要用户名和密码。
+  </p>
+  <form class="form-horizontal" data-bind="submit: codecAuthenticate">
+    <label>用户名</label>
+    <input type="text" class="form-control" maxlength="24"
+           data-bind="value: authUser, valueUpdate: 'afterkeydown'">
+    <label>密码</label>
+    <input type="password" class="form-control" autofocus
+           data-bind="value: authPass, valueUpdate: 'afterkeydown'">
+  </form>
+  <button type="button" class="btn"
+          data-bind="click: codecAuthenticate">
+    再试一次
+  </button>
+  <button type="button" class="btn secondary pull-right"
+          data-bind="click: restart">
+    重新启动终端激活
+  </button>
+</div>
+
+<div class="modal" id="dlg-activate-incall">
+  <h3>视频终端忙</h3>
+  <p>
+    该终端正忙。请断开呼叫后再继续。
+  </p>
+  <button type="button" class="btn"
+          data-bind="click: codecDisconnectCall">
+    断开呼叫
+  </button>
+  <button type="button" class="btn secondary pull-right"
+          data-bind="click: restart">
+    重新启动终端激活
+  </button>
+</div>
+
+<div class="modal" id="dlg-activate-nonetwork">
+  <h3>服务网络不可访问</h3>
+  <p>
+    这项服务需要接入互联网才能工作。终端没有设置DNS或默认网关地址。请与您的网络管理员联系以查找该信息。
+  </p>
+  <p>
+    在完成这些系统配置后，您可以继续这个激活。
+  </p>
+  <button type="button" class="btn pull-right" data-bind="click:restart">
+    重新启动终端激活
+  </button>
+</div>
+
+<div class="modal" id="dlg-activate-fail">
+  <h3>激活失败！</h3>
+  <p>
+    该终端没有连接或不能支持。如果你手动输入地址，请确保终端连接到网络。
+  </p>
+  <h4>返回详细错误信息</h4>
+  <pre data-bind="html: errorText"></pre>
+  <button type="button pull-right" class="btn" data-bind="click: restart">
+    重新启动终端激活
+  </button>
+</div>
+
+<div class="modal" id="dlg-activate-rs">
+  <h3>激活失败！</h3>
+  <p>
+    我们无法激活你的终端。终端重启可能帮助解决这个问题。
+  </p>
+  <h4>返回详细错误信息</h4>
+  <pre data-bind="html: errorText"></pre>
+  <button type="button" class="btn"
+          data-bind="click: codecBoot">
+    重启系统
+  </button>
+  <button type="button" class="btn secondary pull-right"
+          data-bind="click: restart">
+    重新启动终端激活
+  </button>
+</div>
+
+<div class="modal" id="dlg-codec-limits">
+  <h3 data-bind="visible: limitationsError()">
+    视频终端配置不兼容
+  </h3>
+  <h3 data-bind="visible: !limitationsError()">
+    局限性
+  </h3>
+  <!-- ko if: limitationsId() == 'ERR_CISCO_NO_ENCR_SW' -->
+  <h4>思科系统未加密</h4>
+  <p>
+    您的思科系统已发送给你的“不加密”软件版本（tenc或tcnc）。我们的云服务“需要”，终端加密可用的正常工作，保护您的数据，因此，我们不能够继续激活。请联系您的思科合作伙伴纠正这种情况，并得到正确的软件版本。
+  </p>
+  <!-- /ko -->
+  <!-- ko if: limitationsId() == 'WARN_CISCO_OLD_SOFTWARE' -->
+  <h4>思科系统加载不支持的软件版本</h4>
+  <p>
+    您的思科系统运行旧的软件版本。我们的云服务建议您使用一个较新的软件版本来拥有所有功能（如文档共享）正常使用。
+  </p>
+  <!-- /ko -->
+  <!-- ko if: limitationsId() == 'WARN_POLYCOM_OLD_SOFTWARE' -->
+  <h4>宝利通应该升级软件</h4>
+  <p>
+    您的宝利通系统运行旧的软件版本。我们的云服务建议您使用一个较新的软件版本来拥有所有功能（如文档共享）正常使用。
+  </p>
+  <!-- /ko -->
+  <!-- ko if: limitationsId() == 'ERR_POLYCOM_SW_TOO_OLD' -->
+  <h4>宝利通系统运行的软件版本太旧。</h4>
+  <p>
+    你的宝利通系统运行旧的软件版本。我们的云服务<i>需要</i> ，您使用一个较新的软件版本来适配我们的服务。请你联系宝利通合作伙伴升级。
+  </p>
+  <!-- /ko -->
+  <button type="button" class="btn"
+          data-bind="click: limitationsAccept,
+                     visible: !limitationsError()">
+    仍然继续
+  </button>
+  <button type="button" class="btn secondary pull-right"
+          data-bind="click: restart">
+    重新启动终端激活
+  </button>
+</div>
+
+<div class="modal" id="dlg-java-unavailable">
+  <h3>无法启动Java来激活程序</h3>
+  <p>
+    请检查您的<a href="http://www.java.com/en/download/testjava.jsp" target="_new">Java</a>的安装，然后再试。
+  </p>
+  <button type="button" class="btn pull-right"
+          data-bind="click: restart">
+    重新启动终端激活
+  </button>
+</div>
+<iframe id="applet-iframe"
+        data-src="https://my.videxio.com/subscription/2435d87f-c21a-4431-8c0d-9d17e076568f/activate?iframe=1">
+</iframe>
+
+
+
+  <script>
+    window.csrf_token = "710db41a4629f9c2cd48f37c353681f0fd2504d8";
+    window.locale = "zh_Hans_CN";
+  </script>
+    
+  <script src="js/base.js"></script>
+    
+    
+
+<script type="text/javascript">
+  window.ACTIVATE_SETTINGS = {
+    simulate: false,
+    origin: "https://my.videxio.com"
+  };
+</script>
+<script type="text/javascript" src="js/activate.js"></script>
+
+
+</body>
+</html>

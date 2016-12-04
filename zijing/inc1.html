@@ -1,0 +1,19 @@
+<form action="">
+    <input type="text" class="text" name="room-name" placeholder="输入用户名称" required>
+    <input type="submit" value="查&nbsp;询" class="btn-md">
+</form>
+<div class="ajaxList">
+    <div class=""><a class="selectedOne" href="#">admin</a></div>
+    <div class=""><a class="selectedOne" href="#">admin2</a></div>
+    <div class=""><a class="selectedOne" href="#">admin3</a></div>
+</div>
+<div class="mt tright">
+    <a class="button gray closePopWin">取 消<span></span></a>
+</div>
+
+<script>
+    $('a.selectedOne').click(function () {
+        $('input#room-manager').val($(this).html());
+        $('.popOverlay').remove();
+    });
+</script>

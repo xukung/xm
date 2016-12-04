@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>推荐</title>
+    <link rel="stylesheet" href="css/qj.css">
+</head>
+
+<body ng-app="loadMoreApp" ng-controller="loadMoreCtrl">
+<header>
+    <div class="logobar">
+        <div class="page-title"><img src="images/logo_qj.png" class="logo"></div>
+    </div>
+    <nav>
+        <a class="cur" href="recommend.html">推荐</a>
+        <a class="" href="news.html">资讯</a>
+        <a class="" href="video.html">视频</a>
+        <a class="" href="zhengwen.html">社区</a>
+        <a class="" href="play.html">商铺</a>
+    </nav>
+</header>
+
+<div class="wrap">
+    <ul class="clearfix tjlist" id="loadMoreList">
+        <li ng-repeat="x in rdatas">
+            <div class="bigImage" ng-if="x.status === 'bigImage'">
+                <a href={{x.href}}>
+                    <div class="title">{{x.title}}</div>
+                    <div class="pic"><img ng-src={{x.imgurl[0]}}></div>
+                    <div class="other">
+                        发布时间：{{x.pubtime}} &nbsp;
+                        来源：{{x.from}} &nbsp;
+                        阅读量：{{x.read}} &nbsp;
+                        <img class="ding" src="images/ding.png" width="13" height="12">{{x.ding}}
+                    </div>
+                </a>
+            </div>
+            <div class="smallImage" ng-if="x.status === 'smallImage'">
+                <a href={{x.href}}>
+                    <div class="title">{{x.title}}</div>
+                    <div class="pic"><img ng-src={{x.imgurl[0]}}></div>
+                    <div class="other">
+                        发布时间：{{x.pubtime}} &nbsp;
+                        来源：{{x.from}} &nbsp;
+                        阅读量：{{x.read}} &nbsp;
+                        <img class="ding" src="images/ding.png" width="13" height="12">{{x.ding}}
+                    </div>
+                </a>
+            </div>
+            <div class="noImage" ng-if="x.status === 'noImage'">
+                <a href={{x.href}}>
+                    <div class="title">{{x.title}}</div>
+                    <div class="other">
+                        发布时间：{{x.pubtime}} &nbsp;
+                        来源：{{x.from}} &nbsp;
+                        阅读量：{{x.read}} &nbsp;
+                        <img class="ding" src="images/ding.png" width="13" height="12">{{x.ding}}
+                    </div>
+                </a>
+            </div>
+            <div class="multiImage" ng-if="x.status === 'multiImage'">
+                <a href={{x.href}}>
+                    <div class="title">{{x.title}}</div>
+                    <div class="pic">
+                        <div class=""><img ng-src={{x.imgurl[0]}}></div>
+                        <div class=""><img ng-src={{x.imgurl[1]}}></div>
+                        <div class=""><img ng-src={{x.imgurl[2]}}></div>
+                    </div>
+                    <div class="other">
+                        发布时间：{{x.pubtime}} &nbsp;
+                        来源：{{x.from}} &nbsp;
+                        阅读量：{{x.read}} &nbsp;
+                        <img class="ding" src="images/ding.png" width="13" height="12">{{x.ding}}
+                    </div>
+                </a>
+            </div>
+        </li>
+    </ul>
+
+    <div class=""><a href="javascript:void(0);" class="btn btn-block btn-default" id="btnLoadMore">点击加载更多...</a></div>
+    <div id="ajaxTips">正在加载...</div>
+</div>
+
+
+<script src="js/zepto.min.js"></script>
+<script src="js/mobile.js"></script>
+<script src="js/underscore.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/loadMore_angular.js"></script>
+<script>
+    //json中"status"取值 : "bigImage"/"smallImage"/"noImage"/"multiImage"
+    var myLoadMore = new LoadMoreData({
+        dataUrl: './data2.json', //加载ajax数据的url地址
+        distance: 500    //当滚动到最底部以上指定像素数时， 加载新内容
+    });
+</script>
+</body>
+</html>

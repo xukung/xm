@@ -1,0 +1,105 @@
+@import url(common.css);
+
+/*header*/
+.toplink{position:absolute;left: 460px;width:261px;padding:0 30px;height:27px;line-height:27px;background:url("../images/bg_topbar_jishou.png") no-repeat;
+    color: #fff;}
+.toplink .icons{position:absolute;left:150px;top:6px;}
+.toplink .icons a{display:inline;float:left;width:16px;height:16px;background:url(../images/icons.gif) no-repeat;margin-right:8px;line-height:1.5;}
+.toplink .icons a.i1{background-position:0 0;}
+.toplink .icons a.i2{background-position:0 -16px;}
+.toplink .icons a.i3{background-position:0 -32px;}
+.toplink .icons a.i4{background-position:0 -48px;}
+.toplink .icons a.i5{background-position:0 -64px;padding-left:18px;width:auto;}
+.logobar{height:105px;clear:both;background: url("../images/bg_logobar_jishou.png") repeat-x;}
+.logobar .logo{display:inline;float:left;}
+.logobar .rexian{display: inline;float: right;margin-top: 40px;margin-right: 20px;}
+nav{height:40px;line-height:40px;background:url(../images/bg_nav_jishou.png) repeat-x;font-size:15px;font-family:"微软雅黑";
+    clear:both;border-top: 2px solid #ccc;}
+nav a {margin:0 22px;}
+nav a:link,nav a:visited {color:#fff;}
+nav a:hover {color:#ff0;text-decoration:none;}
+nav a.cur{color:#ff0;font-weight:bold;}
+.logobar .rlink{float: right;width: 230px;margin-top: 15px;}
+.logobar .rlink a{display: inline;float: left;width: 90px;padding:3px;color: #45d5f9;}
+.logobar a.i_fy{padding-left: 20px;background: url("../images/icons/icon_fengyang.png") no-repeat left center;}
+.logobar a.i_weibo{padding-left: 20px;background: url("../images/icons/tvicon4.jpg") no-repeat left center;}
+.logobar a.i_weixin{padding-left: 20px;background: url("../images/icons/tvicon1.jpg") no-repeat left center;}
+.logobar a.i_android{padding-left: 20px;background: url("../images/icons/tvicon2.png") no-repeat left center;}
+.logobar a.i_ios{padding-left: 20px;background: url("../images/icons/tvicon3.png") no-repeat left center;}
+
+
+/*footer*/
+footer{margin-bottom:20px;}
+.youqing{width:80px;height:50px;line-height:50px;font-size:14px;font-family:"微软雅黑";color:#c00;text-align:center;}
+.linkbar{height:40px;line-height:40px;background:#104c94;padding:0 30px;position:relative;}
+.linkbar .totop a{padding-left:20px;background:url(../images/totop.jpg) no-repeat left 2px;color:#fff;font-size:14px;position:absolute;right:30px;top:12px;line-height:1.2;}
+.linkbar .lk{color:#fff;}
+.linkbar .lk a{color:#fff;margin:0 10px;}
+
+
+/*通用*/
+.mt{margin-top: 10px;}
+.subnav{background: #f3f3f3;height: 33px;line-height: 33px;}
+.subnav a{color:#136ec2;margin: 0 8px;}
+.box{clear:both;border:1px solid #ddd;}
+.title{height:30px;line-height:28px;padding:0 10px;background: url("../images/bg_title_jishou.jpg") repeat-x;}
+.title .name{display:inline;float:left;font-size:14px;font-family:"微软雅黑";color:#d40202;padding-left: 35px;
+    background: url("../images/icon_title_jishou.png") no-repeat left center;}
+.title .more{display:inline;float:right;}
+.title .more img{*margin-top:8px;}
+.title .tags{display:inline;float:right;margin-right:50px;}
+.title .tags a{display:inline;float:left;height:28px;line-height:28px;padding:0 5px 0 5px;}
+.title .tags a:hover{text-decoration:none;}
+.title .tags a.cur{border-bottom:2px solid #f90;}
+.content{padding:15px 20px;}
+ul.szjs{padding:0 20px;height:312px;overflow: hidden;}
+ul.szjs li{margin-bottom: 5px;border:1px solid #ddd;width: 100%;height: 45px;line-height:45px;}
+ul.szjs li:hover{background: #eee;}
+ul.szjs li:hover a{color: #c00;}
+ul.szjs li .icon{display: inline;float: left;width: 40px;height: 45px;line-height:45px;border-right: 1px solid #ddd;text-align: center;}
+ul.szjs li .icon img{*margin-top:10px;}
+ul.szjs li .txt{display: inline;float: left;width:300px;padding: 0 10px;font-size: 16px;font-family: "Microsoft Yahei";}
+.col_1929_1{width:620px;}
+.col_1929_2{width:370px;}
+a.video3{padding:2px 0 2px 25px;background:url(../images/icon_video2.jpg) no-repeat left center;*display:inline-block;}
+.bmxw .oneline{line-height: 1.7em;height: 1.7em;}
+.icon_audio{display: inline-block;width: 14px;height: 14px;vertical-align: middle;
+    background: url("../images/audio_fy.png") no-repeat;margin-right: 8px;}
+ul.vlist{}
+ul.vlist li{display: inline;float: left;width: 280px;height: 80px;padding:15px 10px;border: 1px solid #eee;
+    border-top:5px solid #eee;margin: 10px;}
+ul.vlist .pic{display: inline;float:left;}
+ul.vlist .txt{display: inline;float: left;margin-left: 10px;line-height:2em;}
+ul.vlist2{}
+ul.vlist2 li{display: inline;float: left;width: 280px;height: 65px;margin: 10px;background: #f0f0f0;}
+ul.vlist2 .pic{display: inline;float:left;}
+ul.vlist2 .txt{display: inline;float: left;line-height:2.2em;width: 145px;padding: 0 8px;}
+ul.vlist3{}
+ul.vlist3 li{height: 60px;margin: 10px 0;line-height: 2em;}
+ul.vlist3 .pic{display: inline;float:right;}
+ul.vlist3 .txt{display: inline;float: left;width: 240px;}
+ul.vlist4{}
+ul.vlist4 li{display: inline;float: left;width: 250px;height: 90px;padding:20px 15px;background: #f0f0f0;margin:10px;}
+ul.vlist5{}
+ul.vlist5 li{display: inline;float: left;width: 140px;height: 140px;margin:0 10px;position: relative;}
+ul.vlist5 li .txt{}
+ul.vlist5 li .txt a{}
+ul.vlist5 li .high{position: absolute;left: 5px;top: 62px;background: url("../images/high.gif") no-repeat;width: 15px;height: 13px;}
+
+.col_2012_1{width:100px;}
+.col_2012_2{width:140px;}
+ul.jc{}
+ul.jc li{display: inline;float: left;width: 160px;padding:10px;margin: 5px;line-height: 2em;background: #f5f5f5;}
+ul.jc li .oneline{line-height: 2em;height: 2em;}
+.col_2039_1{width:685px;}
+.col_2039_2{width:305px;}
+ul.fw{}
+ul.fw li{display: inline;float: left;width:85px;height: 75px;margin: 0 6px;}
+ul.zx{}
+ul.zx li{display: inline;float: left;width: 290px;height: 166px;margin: 10px 15px;border-top: 2px solid #ddd;line-height: 2em;}
+ul.zx li .oneline{height: 1.8em;}
+ul.zx .clearfix{height: 50px;line-height: 50px;}
+ul.zx li .fleft{font-size: 16px;font-family: "Microsoft Yahei";}
+ul.audio{}
+ul.audio li{display:inline;float: left; width: 20%;margin:10px 2.4%;border-bottom: 1px solid #ddd;}
+ul.audio li.more{border: 0;text-align: right;}

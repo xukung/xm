@@ -1,0 +1,420 @@
+@import "_const";
+@import "_reset";
+@import "_common";
+@import "_module";
+@import "_font";
+@import "_color";
+@import "_seldom";
+
+//@import "_icon";
+//@import "_form";
+//@import "_layout";
+//@import "_glyphicon";
+
+/*北京铁建*/
+header {
+  .top-bar {
+    height: 43px;
+    line-height: 43px;
+    background: url("../images/bg_topbar.jpg") repeat-x;
+  }
+  .banner {
+    height: 225px;
+    background: url("../images/banner.jpg") no-repeat center top;
+    background-size: cover;
+  }
+  nav {
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    font-size: 0;
+    color: #fff;
+    background: url("../images/bg_nav.jpg") repeat-x;
+    a {
+      display: inline-block;
+      width: 113px;
+      height: 45px;
+      text-align: center;
+      font-size: 16px;
+      color: #fff;
+      border-right: 1px solid #0148a2;
+      &:nth-child(1) {
+        border-left: 1px solid #0148a2;
+      }
+      &:hover {
+        text-decoration: none;
+        color: #ff0;
+      }
+      &.cur {
+        background: url("../images/bg_nav_cur.jpg") repeat-x;
+      }
+    }
+  }
+}
+
+footer {
+  margin: 10px 0;
+  padding: 10px;
+  border-top: 3px solid #101c88;
+  text-align: center;
+  color: #9aa2ce;
+  a {
+    color: #0e1e7d;
+  }
+}
+
+.col_2054_1 {
+  width: 150px;
+}
+
+.col_2054_2 {
+  width: 930px;
+}
+
+h1.tt {
+  padding: 60px 0 30px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sub-title {
+  padding: 10px;
+  border-bottom: 2px solid #555;
+}
+
+.video-box {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.main-tuwen {
+  padding: 40px 0;
+  font-family: "宋体";
+  img {
+    max-width: 100%;
+  }
+  p {
+    margin-bottom: 0.5em;
+  }
+}
+
+.main-body {
+  margin-top: 30px;
+  padding: 15px;
+  background: url("../images/bg_main.jpg") repeat-x left top;
+  h1.tt {
+    font-weight: normal;
+    padding: 15px;
+  }
+  .main-txt {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: 15px;
+    p {
+      margin-bottom: 0.5em;
+      text-indent: 2em;
+    }
+  }
+}
+
+ul.sub-nav {
+  li {
+    margin-bottom: 10px;
+    a {
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      font-size: 20px;
+      background: #e2e4e5;
+      &.cur {
+        color: #fff;
+        background: #e00;
+      }
+    }
+  }
+}
+
+.con-contact {
+  width: 700px;
+  margin: 30px auto;
+  font-size: 18px;
+  line-height: 2.2;
+}
+
+ul.news-list {
+  li {
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+    .pic {
+      display: inline;
+      float: left;
+      width: 415px;
+      img {
+        width: 415px;
+        height: 240px;
+      }
+    }
+    .txt {
+      display: inline;
+      float: right;
+      width: 715px;
+      font-size: 18px;
+      line-height: 1.8;
+      h1 {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        a {
+          color: #012752;
+        }
+      }
+      .date {
+        text-align: right;
+        color: #999;
+      }
+    }
+  }
+}
+
+/*首页*/
+.col_2053_1 {
+  width: 775px;
+}
+
+.col_2053_2 {
+  width: 350px;
+}
+
+.col_2121_1 {
+  width: 535px;
+}
+
+.col_2121_2 {
+  width: 290px;
+  margin-left: 13px;
+}
+
+.col_2121_3 {
+  width: 300px;
+}
+
+.gray-bg {
+  background: #f4f4f4;
+  padding: 20px 0;
+}
+
+.yaowen {
+  h1 {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  .summary {
+    text-indent: 2em;
+  }
+}
+
+.icon {
+  display: inline-block;
+  position: relative;
+  top: 5px;
+  margin-right: 5px;
+  width: 23px;
+  height: 23px;
+  background: url("../images/icon_news.png") no-repeat center center;
+}
+
+.ic-news {
+  background-image: url("../images/icon_news.png");
+}
+
+.ic-pic {
+  background-image: url("../images/icon_pic.png");
+}
+
+.ic-dang {
+  background-image: url("../images/icon_dang.png");
+}
+
+.ic-wenhua {
+  background-image: url("../images/icon_wenhua.png");
+}
+
+.ic-zt {
+  background-image: url("../images/icon_zhuanti.png");
+}
+
+.ic-zhg {
+  background-image: url("../images/icon_zhigong.png");
+}
+
+.ic-video {
+  background-image: url("../images/icon_shipin.png");
+}
+
+.tt-sheying {
+  height: 42px;
+  line-height: 42px;
+  padding: 10px 15px 0 15px;
+  background: url("../images/sheyingzuopin.jpg") no-repeat;
+}
+
+.con-sheying {
+  padding: 20px 0;
+  background: #f5f5f5;
+}
+
+ul.tlist {
+  li {
+    height: 35px;
+    line-height: 35px;
+    border-bottom: 1px dashed #ccc;
+    .date {
+      float: right;
+      margin-left: 2em;
+    }
+    .red-line {
+      padding-left: 10px;
+      background: url("../images/icon_red.jpg") no-repeat left center;
+    }
+  }
+}
+
+ul.tlist2 {
+  li {
+    height: 33px;
+    line-height: 33px;
+    .date {
+      float: right;
+      margin-left: 2em;
+    }
+    .red-line {
+      padding-left: 10px;
+      background: url("../images/icon_red.jpg") no-repeat left center;
+    }
+  }
+}
+
+ul.zht {
+  margin-top: -30px;
+  li {
+    margin: 30px 0;
+    h1 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .pic {
+      float: left;
+      img {
+        width: 90px;
+        height: 60px;
+      }
+    }
+    .txt {
+      float: right;
+      width: 170px;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+  }
+}
+
+ul.vlist {
+  li {
+    width: 270px;
+    margin: 0 5px;
+    .pic {
+      position: relative;
+      img {
+        width: 270px;
+        height: 150px;
+      }
+      .icon-play {
+        position: absolute;
+        width: 51px;
+        height: 50px;
+        background: url("../images/icon_play.png") no-repeat;
+        top: 50%;
+        left: 50%;
+        margin-top: -25px;
+        margin-left: -25px;
+      }
+    }
+    .txt {
+
+    }
+  }
+}
+
+/*专题*/
+body.special {
+  background: url("../images/bg_body_zhuanti.jpg") repeat-x left 800px;
+  .inner {
+    padding-top: 1px;
+    zoom: 1;
+    background: url("../images/bg_huawen.jpg") no-repeat center top;
+  }
+
+  footer {
+    color: #fff;
+  }
+}
+
+.wrap-special {
+  position: relative;
+  width: 1150px;
+  margin: 230px auto 10px auto;
+  background: #112e58;
+  color: #fff;
+  a {
+    color: #fff;
+  }
+}
+
+.pad-special {
+  padding: 30px;
+}
+
+header {
+  .top-bar2 {
+    background: #f8f6f6;
+    height: 70px;
+    line-height: 70px;
+    img.logo {
+      float: left;
+    }
+    .return-home {
+      font-size: 16px;
+      font-weight: bold;
+      font-family: "宋体";
+    }
+  }
+}
+
+.special-bar1 {
+  background: #005cac url("../images/bar_zhuanti.jpg") no-repeat left top;
+  height: 12px;
+}
+
+.zhsh {
+  position: absolute;
+  left: 0;
+  top: -200px;
+  z-index: 9;
+  width: 1150px;
+  height: 278px;
+  background: url("../images/zhuantihuodong.png") no-repeat;
+}
+
+.col_2104_1 {
+  width: 795px;
+  position: relative;
+  z-index: 100;
+}
+
+.col_2104_2 {
+  width: 240px;
+}

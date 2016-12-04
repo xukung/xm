@@ -1,0 +1,55 @@
+@import url(common.css);
+
+/*footer*/
+footer{margin-bottom:20px;}
+.linkbar{height:40px;line-height:40px;background:#104c94;padding:0 30px;position:relative;}
+.linkbar .totop a{padding-left:20px;background:url(../images/totop.jpg) no-repeat left 2px;color:#fff;font-size:14px;position:absolute;right:30px;top:12px;line-height:1.2;}
+.linkbar .lk{color:#fff;}
+.linkbar .lk a{color:#fff;margin:0 10px;}
+
+
+/*通用*/
+.mt{margin-top:10px;}
+.box{background:url(../images/bg_huawen.jpg) no-repeat left top;padding-top:5px;zoom:1;}
+.title{height:30px;line-height:30px;padding-left:30px;padding-right:10px;background:url(../images/bg_title_sb.jpg) no-repeat left top;}
+.title .name{display:inline;float:left;font-size:16px;font-family:"微软雅黑";color:#888;}
+.title .more{display:inline;float:right;}
+.title .more a{color:#888;}
+.title .tags{display:inline;float:right;margin-right:50px;}
+.title .tags a{display:inline;float:left;height:20px;line-height:20px;padding:5px 5px 0 5px;}
+.title .tags a:hover{text-decoration:none;}
+.title .tags a.cur{border-bottom:2px solid #d00;}
+.content{padding:10px;}
+ul.tuwen{}
+ul.tuwen li{display:inline;float:left;width:200px;height:180px;margin:0 9px;}
+ul.tuwen li img{width:200px;height:115px;margin-bottom:3px;}
+ul.lingdao{}
+ul.lingdao li{margin:10px 0;}
+ul.vd2{}
+ul.vd2 li{display:inline;float:left;width:125px;height:130px;margin:0 19px;}
+ul.vd2 .high{position:absolute;left:3px;bottom:3px;}
+ul.vd2 .t{}
+ul.vd3 li{margin:0 12px;}
+.ul_1029{}
+.ul_1029 li{color:#999;}
+a.video{padding-left:25px;background:url(../images/icon_videoblue.gif) no-repeat left 2px;}
+a.audio{padding:2px 0 2px 20px;background:url(../images/icon_audio.gif) no-repeat left 1px;}
+ul.zhuchiren{}
+ul.zhuchiren li{display:inline;float:left;width:80px;height:150px;margin:0 6px;text-align:center;}
+ul.zt{}
+ul.zt li{display:inline;float:left;width:72px;height:120px;margin:0 25px;}
+ul.zt .icbtn{display:block;width:74px;height:23px;line-height:23px;background:url(../images/bg_icbtn.gif);color:#000;text-align:center;margin-top:5px;}
+ul.zt3 li{margin:0 1px;}
+ul.xx{}
+ul.xx li{display:inline;float:left;width:90px;height:65px;text-align:center;}
+
+
+.col_1011_1{width:690px;}
+.col_1011_2{width:300px;}
+.col_1032_1{width:210px;}
+.col_1032_2{width:65px;}
+.col_1042_1{width:680px;}
+.col_1042_2{width:300px;}
+.col_1100_1{width:98px;}
+.col_1100_2{width:180px;}
+

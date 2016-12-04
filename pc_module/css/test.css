@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/*常用语法*/
+/*嵌套*/
+div b a { color: black; font-size: 12px; font-weight: normal; }
+div b a:hover { color: red; }
+
+/*if*/
+p { color: green; }
+
+/*for*/
+.col-xk-1 { width: 5%; }
+
+.col-xk-2 { width: 10%; }
+
+.col-xk-3 { width: 15%; }
+
+/*while*/
+.item-6 { width: 6px; }
+
+.item-4 { width: 4px; }
+
+.item-2 { width: 2px; }
+
+/*each*/
+.icon-a { background: url("../images/a.png"); }
+
+.icon-b { background: url("../images/b.png"); }
+
+.icon-c { background: url("../images/c.png"); }
+
+/*Mixins (混入)*/
+.login-error { color: yellow; font-size: 15px; }
+
+/*function (自定义函数)*/
+#sidebar { width: 50%; }
+
+/*继承*/
+.parent, .child { border: 1px solid red; }
+
+.child { padding: 10px; }
+
+/*3D文本*/
+h1 { font-size: 50px; color: #fc0; text-shadow: 1px 1px 0px #e6b800, 2px 2px 0px #cca300, 3px 3px 0px #b38f00, 4px 4px 0px #997a00, 4px 4px 2px #000; }
+
+/*颜色运算*/
+a { color: #b3b3b3; color: #5f6f7e; }
+
+/*# sourceMappingURL=test.css.map */

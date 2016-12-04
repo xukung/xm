@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>音频列表</title>
+    <link rel="stylesheet" href="css/yuanwenhua.css">
+</head>
+
+<body ng-app="loadMoreApp" ng-controller="loadMoreCtrl">
+<header>
+    <div class="logobar">
+        <div class="return-back"><a href="#"><span class="songti">&lt;&lt;</span> 返回</a></div>
+        <div class="page-title">音乐作品</div>
+    </div>
+</header>
+
+
+
+<div class="wrap">
+    <ul class="clearfix audio-list" id="loadMoreList">
+        <li ng-repeat="x in rdatas">
+            <a href="{{x.href}}">
+                <h1 class="title">歌曲：&lt;&lt;{{x.song}}&gt;&gt;  演唱者： {{x.singer}}</h1>
+                <div class="other">{{x.source}} &nbsp; {{x.date}} &nbsp; 点击量:{{x.hit}}</div>
+            </a>
+        </li>
+    </ul>
+
+    <div class=""><a href="javascript:void(0);" class="btn btn-block btn-default" id="btnLoadMore">点击加载更多...</a></div>
+    <div id="ajaxTips">正在加载...</div>
+</div>
+
+
+<script src="js/zepto.min.js"></script>
+<script src="js/mobile.js"></script>
+<script src="js/underscore.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/loadMore_angular.js"></script>
+<script>
+    var myLoadMore = new LoadMoreData({
+        dataUrl: './data6.json', //加载ajax数据的url地址
+        distance: 500    //当滚动到最底部以上指定像素数时， 加载新内容
+    });
+</script>
+
+</body>
+</html>

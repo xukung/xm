@@ -1,0 +1,32 @@
+/*个性复选框*/
+input.checktoggle {
+  position: absolute;
+  left: -9999px;
+}
+input.checktoggle + label {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #fff;
+  overflow: hidden;
+  border: 1px solid #ccc;
+}
+input.checktoggle:checked + label {
+  background: #fff;
+}
+input.checktoggle + label:before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 20px;
+}
+input.checktoggle:checked + label:before {
+  background: #00aeeb;
+}

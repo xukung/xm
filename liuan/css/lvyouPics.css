@@ -1,0 +1,6 @@
+.outLvyou{width:250px;overflow:hidden;}
+.sLeftLvyou{display:block;cursor:pointer;background:url(../images/arrow417_left2.jpg) no-repeat left top;width:35px;height:24px;border-right:1px solid #ddd;position:absolute;right:55px;top:-30px;}
+.sRightLvyou{display:block;cursor:pointer;background:url(../images/arrow417_right2.jpg) no-repeat left top;width:35px;height:24px;position:absolute;right:20px;top:-30px;}
+.sLeftLvyou:hover,.sRightLvyou:hover{background-position:left bottom;}
+
+

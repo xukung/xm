@@ -1,0 +1,514 @@
+/* 全局CSS定义 */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+video,
+canvas,
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+body {
+  font-family: sans-serif;
+  font-size: 17px;
+  line-height: 1.8;
+  background-color: #fff;
+  color: #555;
+  -webkit-text-size-adjust: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+fieldset {
+  border: 1px solid #999;
+  padding: 0 20px 20px 20px;
+  margin-bottom: 20px;
+  clear: both;
+}
+legend {
+  padding-left: 8px;
+  padding-right: 15px;
+  font-weight: bold;
+  color: #111111;
+  margin-left: -10px;
+  margin-bottom: 10px;
+}
+/* 链接颜色 */
+a {
+  color: #444;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(9, 174, 255, 0.5);
+}
+a:hover {
+  color: #04bee6;
+  text-decoration: underline;
+}
+/* 颜色属性*/
+.black,
+a.black:link,
+a.black:visited {
+  color: black;
+}
+.white,
+a.white:link,
+a.white:visited {
+  color: white;
+}
+.gray,
+a.gray:link,
+a.gray:visited {
+  color: #808080;
+}
+.silver,
+a.silver:link,
+a.silver:visited {
+  color: #c0c0c0;
+}
+.red,
+a.red:link,
+a.red:visited {
+  color: #c00;
+}
+.maroon,
+a.maroon:link,
+a.maroon:visited {
+  color: #800000;
+}
+.lime,
+a.lime:link,
+a.lime:visited {
+  color: #0f0;
+}
+.green,
+a.green:link,
+a.green:visited {
+  color: #008000;
+}
+.blue,
+a.blue:link,
+a.blue:visited {
+  color: #00f;
+}
+.navy,
+a.navy:link,
+a.navy:visited {
+  color: #000080;
+}
+.yellow,
+a.yellow:link,
+a.yellow:visited {
+  color: #ff0;
+}
+.olive,
+a.olive:link,
+a.olive:visited {
+  color: #808000;
+}
+.teal,
+a.teal:link,
+a.teal:visited {
+  color: #008080;
+}
+.fuchsia,
+a.fuchsia:link,
+a.fuchsia:visited {
+  color: #f0f;
+}
+.purple,
+a.purple:link,
+a.purple:visited {
+  color: #800080;
+}
+.orange,
+a.orange:link,
+a.orange:visited {
+  color: orange;
+}
+.cyan,
+a.cyan:link,
+a.cyan:visited {
+  color: #04bee6;
+}
+.magenta,
+a.magenta:link,
+a.magenta:visited {
+  color: #f3048b;
+}
+.error,
+.notice,
+.success {
+  padding: .8em;
+  margin-bottom: 1em;
+  border: 2px solid #ddd;
+}
+.error {
+  background: #FBE3E4;
+  color: #8a1f11;
+  border-color: #FBC2C4;
+}
+.notice {
+  background: #FFF6BF;
+  color: #514721;
+  border-color: #FFD324;
+}
+.success {
+  background: #E6EFC2;
+  color: #264409;
+  border-color: #C6D880;
+}
+.error a {
+  color: #8a1f11;
+}
+.notice a {
+  color: #514721;
+}
+.success a {
+  color: #264409;
+}
+/* 字体属性*/
+.bold {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.f12 {
+  font-size: 12px;
+  font-weight: normal;
+}
+.f12b {
+  font-size: 12px;
+  font-weight: bold;
+}
+.f14 {
+  font-size: 14px;
+  font-weight: normal;
+}
+.f14b {
+  font-size: 14px;
+  font-weight: bold;
+}
+.f16 {
+  font-size: 16px;
+  font-weight: normal;
+}
+.f16b {
+  font-size: 16px;
+  font-weight: bold;
+}
+.f18 {
+  font-size: 18px;
+  font-weight: normal;
+}
+.f18b {
+  font-size: 18px;
+  font-weight: bold;
+}
+.f26 {
+  font-size: 26px;
+  font-weight: normal;
+}
+.f26b {
+  font-size: 26px;
+  font-weight: bold;
+}
+/*布局属性*/
+.col-xk-1,
+.col-xk-2,
+.col-xk-3,
+.col-xk-4,
+.col-xk-5,
+.col-xk-6,
+.col-xk-7,
+.col-xk-8,
+.col-xk-9,
+.col-xk-10,
+.col-xk-11,
+.col-xk-12,
+.col-xk-13,
+.col-xk-14,
+.col-xk-15,
+.col-xk-16,
+.col-xk-17,
+.col-xk-18,
+.col-xk-19,
+.col-xk-20 {
+  float: left;
+}
+.col-xk-1 {
+  width: 5%;
+}
+.col-xk-2 {
+  width: 10%;
+}
+.col-xk-3 {
+  width: 15%;
+}
+.col-xk-4 {
+  width: 20%;
+}
+.col-xk-5 {
+  width: 25%;
+}
+.col-xk-6 {
+  width: 30%;
+}
+.col-xk-7 {
+  width: 35%;
+}
+.col-xk-8 {
+  width: 40%;
+}
+.col-xk-9 {
+  width: 45%;
+}
+.col-xk-10 {
+  width: 50%;
+}
+.col-xk-11 {
+  width: 55%;
+}
+.col-xk-12 {
+  width: 60%;
+}
+.col-xk-13 {
+  width: 65%;
+}
+.col-xk-14 {
+  width: 70%;
+}
+.col-xk-15 {
+  width: 75%;
+}
+.col-xk-16 {
+  width: 80%;
+}
+.col-xk-17 {
+  width: 85%;
+}
+.col-xk-18 {
+  width: 90%;
+}
+.col-xk-19 {
+  width: 95%;
+}
+.col-xk-20 {
+  width: 100%;
+}
+.wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.pad5 {
+  padding: 5px;
+}
+.pad10 {
+  padding: 10px;
+}
+.pad20 {
+  padding: 20px;
+}
+.pad30 {
+  padding: 30px;
+}
+.pad5_10 {
+  padding: 5px 10px;
+}
+.pad10_20 {
+  padding: 10px 20px;
+}
+.pad20_30 {
+  padding: 20px 30px;
+}
+.mt {
+  margin-top: 10px;
+}
+.mt5 {
+  margin-top: 5px;
+}
+.notop {
+  margin-top: 0;
+}
+/*表单属性*/
+input.text,
+textarea,
+select {
+  border: 1px solid #ddd;
+}
+input.text:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #2694e8;
+}
+input.text {
+  width: 130px;
+  padding: 2px 6px;
+  background: #fff;
+  border-radius: 0px;
+}
+textarea {
+  width: 300px;
+  height: 150px;
+  padding: 5px;
+}
+/* 其他属性 */
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+.tleft {
+  text-align: left;
+}
+.tcenter {
+  text-align: center;
+}
+.tright {
+  text-align: right;
+}
+.center {
+  margin: 0 auto;
+}
+.clear {
+  clear: both;
+}
+.hide {
+  display: none;
+}
+.h0 {
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+}
+.omit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.oneline {
+  width: 100%;
+  height: 1.5em;
+  line-height: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.highlight {
+  background: #ff0;
+}
+.zoom {
+  zoom: 1;
+}
+.verdana {
+  font-family: verdana, sans-serif;
+}
+.songti {
+  font-family: "宋体";
+}
+.hr {
+  border-top: 1px solid #ccc;
+  margin: 8px 0;
+}
+.hr2 {
+  border-top: 1px dashed #ccc;
+  margin: 8px 0;
+}
+.space {
+  height: 10px;
+  font-size: 0;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  font-size: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+.relative {
+  position: relative;
+}
+img.picture {
+  border: 1px solid #ccc;
+}
+table.data {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+table.data td,
+table.data th {
+  border: 1px solid #cfcfcf;
+  padding: 4px;
+  text-align: center;
+}
+table.data td[align="left"],
+table.data th[align="left"] {
+  text-align: left;
+}
+table.data td {
+  border-left: 0;
+  border-right: 0;
+}
+table.data th {
+  background-color: #f5f5f5;
+  background-image: linear-gradient(#fcfcfc, #dddddd);
+}
+table.data tr:nth-child(odd) {
+  background: #f8f8f8;
+}
+table.data tr:hover {
+  background: #ffffb2;
+}
+/*页码*/
+.page {
+  text-align: center;
+  margin: 10px 0;
+}
+.page a {
+  display: inline-block;
+  height: 22px;
+  *height: 18px;
+  line-height: 22px;
+  *line-height: 18px;
+  padding: 0 8px;
+  border: 1px solid #ddd;
+  margin: 0 3px;
+}
+.page span {
+  margin: 0 3px;
+}

@@ -1,0 +1,7 @@
+.outwrap_picshow .description {
+    background:none;
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/picShow/halftransparent.png', sizingMethod='scale');
+}
+.outwrap_picshow li.cur .description {
+	filter:none;
+}

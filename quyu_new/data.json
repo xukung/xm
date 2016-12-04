@@ -1,0 +1,48 @@
+[
+  {
+    "type": "noImage",
+    "title": "重温习近平前7月京外调研12句话",
+    "link": "http://www.baidu.com",
+    "source": "宜章电视台",
+    "time": "2016/8/3",
+    "hit": 12345
+  },
+  {
+    "type": "smallImage",
+    "title": "重温习近平前7月京外调研12句话",
+    "link": "http://www.baidu.com",
+    "source": "宜章电视台",
+    "time": "2016/8/3",
+    "hit": 12345,
+    "num": "4图",
+    "images": [
+      "images/photo.png"
+    ]
+  },
+  {
+    "type": "bigImage",
+    "title": "重温习近平前7月京外调研12句话",
+    "link": "http://www.baidu.com",
+    "source": "宜章电视台",
+    "time": "2016/8/3",
+    "hit": 12345,
+    "num": "4图",
+    "images": [
+      "images/photo.png"
+    ]
+  },
+  {
+    "type": "threeImage",
+    "title": "重温习近平前7月京外调研12句话",
+    "link": "http://www.baidu.com",
+    "source": "宜章电视台",
+    "time": "2016/8/3",
+    "hit": 12345,
+    "num": "4图",
+    "images": [
+      "images/photo.png",
+      "images/photo.png",
+      "images/photo.png"
+    ]
+  }
+]

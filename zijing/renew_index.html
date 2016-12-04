@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>待续费列表</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--html5shiv.min.js must be in head-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/selectivizr.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<header>
+    <div class="logo"><a href="#"><img class="" src="images/logo_zijing.jpg"></a></div>
+    <div class="topbar clearfix">
+        <div class="fleft">管理控制台 &gt; 续费管理 &gt; <span class="cyan">待续费列表</span></div>
+        <div class="fright"><a href="#">帮助</a> | <a href="#">客服</a> | <a href="#">David@163.com</a></div>
+    </div>
+</header>
+
+<div class="left-area">
+    <div class="tcenter pad10 gray">管理控制台</div>
+    <ul class="left-nav">
+        <li><a href="domain_index.html">域名管理</a></li>
+        <li><a href="user_index.html">用户管理</a></li>
+        <li><a href="meeting_index.html">会议管理</a></li>
+        <li><a href="terminal_index.html">终端管理</a></li>
+        <li><a href="cash_index.html">账务管理</a></li>
+        <li class="cur"><a href="renew_index.html">续费管理</a></li>
+        <li><a href="order_index.html">工单管理</a></li>
+        <li><a href="message_index.html">消息管理</a></li>
+        <li><a href="cloud_index.html">专属云管理</a></li>
+    </ul>
+</div>
+
+<div class="second-area">
+    <ul class="second-nav top-renew">
+        <li class="cur"><a href="renew_index.html">待续费列表</a></li>
+        <li><a href="renew_list2.html">待释放列表</a></li>
+    </ul>
+</div>
+
+<div class="main-area">
+    <table class="data" width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <th width="25%" valign="top">会议室名称</th>
+            <th width="25%" valign="top">到期时间</th>
+            <th width="25%" valign="top">自动续费状态</th>
+            <th width="25%" valign="top">操作</th>
+        </tr>
+        <tr>
+            <td>zhangsan@163.com</td>
+            <td>2015年10月12日</td>
+            <td>未开通</td>
+            <td>
+                <a href="#" class="green">续费</a> &nbsp;
+                <a href="#" class="cyan">打开自动续费</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.validate.messages.js"></script>
+<script src="js/jquery.placeholder.js"></script><!--使ie支持placeholder属性-->
+<script src="js/common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>图文列表页</title>
+    <link rel="stylesheet" href="css/yuanwenhua.css">
+    <link rel="stylesheet" href="css/swiper.css"/>
+</head>
+
+<body ng-app="loadMoreApp" ng-controller="loadMoreCtrl">
+<header>
+    <div class="logobar">
+        <div class="return-back"><a href="#"><span class="songti">&lt;&lt;</span> 返回</a></div>
+        <div class="page-title">图文列表页</div>
+    </div>
+</header>
+
+
+<div class="wrap">
+    <ul class="clearfix list3" id="loadMoreList">
+        <li ng-repeat="x in rdatas">
+            <a href={{x.href}}>
+                <div class="title">{{x.title}}</div>
+                <div class="pic"><img ng-src={{x.imgurl}}></div>
+                <div class="other">
+                    发布时间：{{x.time}} &nbsp;
+                    来源：{{x.from}} &nbsp;
+                    阅读量：{{x.read}} &nbsp;
+                    <img class="ding" src="images/ding.png" width="13" height="12">{{x.ding}}
+                </div>
+            </a>
+        </li>
+    </ul>
+
+    <div class=""><a href="javascript:void(0);" class="btn btn-block btn-default" id="btnLoadMore">点击加载更多...</a></div>
+    <div id="ajaxTips">正在加载...</div>
+</div>
+
+
+<script src="js/zepto.min.js"></script>
+<script src="js/mobile.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper-control.js"></script>
+<script src="js/underscore.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/loadMore_angular.js"></script>
+<script>
+    var myLoadMore = new LoadMoreData({
+        dataUrl: './data.json', //加载ajax数据的url地址
+        distance: 500    //当滚动到最底部以上指定像素数时， 加载新内容
+    });
+</script>
+
+</body>
+</html>

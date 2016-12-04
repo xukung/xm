@@ -1,0 +1,12 @@
+.icon-nav {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+}
+
+@for $i from 1 through 14 {
+    .icon-nav-#{$i} {
+        background-image: url("../images/icon/icon" + $i + ".png");
+    }
+}

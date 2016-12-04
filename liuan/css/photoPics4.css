@@ -1,0 +1,6 @@
+.sUp{display:block;cursor:pointer;background:url(../images/arrow_up2.gif) no-repeat center center;width:22px;height:27px;position:absolute;right:25px;top:60px;}
+.sDown{display:block;cursor:pointer;background:url(../images/arrow_down2.gif) no-repeat center center;width:22px;height:27px;position:absolute;right:25px;top:87px;}
+.photoPics{width:900px;height:180px;overflow:hidden;margin-top:20px;position:relative;}
+.photoPics td{padding:0 10px;text-align:center;}
+.photoPics .each{height:180px;overflow:hidden;}
+

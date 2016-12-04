@@ -1,0 +1,8 @@
+.sLeftPhoto,.sRightPhoto{cursor:pointer;}
+.photoPics {width:1070px;height:270px;overflow:hidden;position: relative;}
+.photoPics td{padding:0 10px;}
+.photoPics a{display: block;}
+.photoPics .txt{position: absolute;left: 0;right: 0;bottom: 0;height: 24px;line-height: 24px;text-align: center;
+color: #fff;background: rgba(0,0,0,0.3);font-size: 16px;}
+
+

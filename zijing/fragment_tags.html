@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <title>邀请</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--html5shiv.min.js must be in head-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/selectivizr.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<header>
+    <div class="logo"><a href="#"><img class="" src="images/logo_zijing.jpg"></a></div>
+    <div class="topbar clearfix">
+        <div class="fleft">管理控制台 &gt; <span class="cyan">邀请</span></div>
+        <div class="fright"><a href="#">帮助</a> | <a href="#">客服</a> | <a href="#">David@163.com</a></div>
+    </div>
+</header>
+
+<div class="tcenter"><a href="fragment_meeting_list.html" class="btn-md">更换会议室</a></div>
+
+<div class="box mt20">
+    <div class="tags gray-tags">
+        <span class="cur">会议</span>
+        <span class="">邀请</span>
+        <span class="">管理会议室</span>
+    </div>
+    <div class="cons">
+        <div class="each">
+            会议内容
+        </div>
+        <div class="each" style="display: none;">
+            <form action="fragment_tags.html" id="zjForm">
+                <div class="mt20 tcenter">
+                    <span class="f16b">邮件邀请</span>
+                </div>
+                <div class="mt20 tcenter">
+                    <input type="email" class="text" name="email" placeholder="对方邮件地址" required>
+                    <input class="btn-md" type="submit" value="查&nbsp;&nbsp;询"></div>
+            </form>
+        </div>
+        <div class="each" style="display: none;">
+            <div class="tcenter">
+                <div class="mt20">会议成员  &nbsp;&nbsp;&nbsp;&nbsp; 张三</div>
+                <div class="mt20">
+                    <button class="btn-md">静音</button>
+                    <button class="btn-md">禁止摄像头</button>
+                    <button class="btn-md">踢出</button>
+                </div>
+            </div>
+            <div class="blue-btns">
+                <a href="#">设置主持人密码</a>
+                <a href="#">设置聊天室密码</a>
+                <a href="#">锁定会议</a>
+                <a href="#">结束会议</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="tcenter">
+    <div class="mt20">当前会议室号码为：123245345</div>
+    <div class="mt20"><a href="#" class="btn-lg">进入会议</a></div>
+</div>
+
+
+
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.validate.messages.js"></script>
+<script src="js/jquery.placeholder.js"></script><!--使ie支持placeholder属性-->
+<script src="js/common.js"></script>
+
+</body>
+</html>

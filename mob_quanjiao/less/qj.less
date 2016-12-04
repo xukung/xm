@@ -1,0 +1,88 @@
+@import "common.less";
+
+@color1:#da020c;
+
+body{padding-top: 2.5rem;font-family: STHeiti,"Microsoft YaHei",Helvetica,Arial,sans-serif;}
+header{position: fixed;top: 0;left: 0;width: 100%;z-index: 9999;}
+header .logobar{position: relative;padding: 0 0.5rem;background: #e33;color:#fff;
+  height: 2.5rem; line-height: 2.5rem; font-size: 1rem;}
+header .logobar a{color: #fff;}
+header .logobar .return-back{position: absolute;left: 0.5rem;top:0;font-size: 0.8rem;}
+header .logobar .page-title{text-align: center;}
+header .logobar .page-title img.logo{height: 1.8rem;margin-top: -0.2rem;}
+header nav{height: 2.5rem; line-height: 2.5rem;border-bottom:1px solid @color1;font-size: 1rem;background: #fff;display:none;}
+header nav a{display:inline-block;float:left;width: 20%;text-align: center;}
+header nav a:hover,header nav a.cur{color:@color1;text-decoration: none;}
+
+.zhengwen{padding: 10px;}
+.zhengwen h1{font-size: 1.3rem;font-weight: normal;line-height: 1.4;margin: 20px 0;}
+.zhengwen h3{font-weight: normal;line-height: 1.2;font-size: 12px;color: #999;}
+.zhengwen img.ding{margin-right: 3px;vertical-align: middle;margin-top: -3px;}
+.zhengwen video{width: 100%;}
+.zhengwen .main-content{padding:20px 0;}
+.zhengwen .main-content img{width: 100%;}
+
+#ajaxTips {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.5);
+  text-align: center;
+  display: none;
+}
+#btnLoadMore {
+  display: block;
+  border: 1px solid #ddd;
+  background-image: linear-gradient(#f0f0f0, #ccc);
+  text-align: center;
+  text-decoration: none;
+}
+
+ul.vlist{}
+ul.vlist li{float: left;width: 50%;padding: 10px;}
+ul.vlist a{text-decoration: none;display: block;}
+ul.vlist li div{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+ul.vlist .title{line-height: 1.5;}
+ul.vlist .other{clear: both;font-size: 12px;color: #999;}
+ul.vlist .pic{vertical-align: middle;height: 6rem;overflow: hidden;}
+ul.vlist .pic img{width: 100%;min-height: 6rem;}
+ul.vlist img.ding{margin-right: 3px;vertical-align: middle;margin-top: -3px;}
+@media (min-width: 640px) {
+  ul.vlist li{width: 33.3%;padding: 15px;}
+}
+
+ul.tjlist{}
+ul.tjlist li{padding: 10px;border-bottom: 10px solid #eee;}
+ul.tjlist li a{text-decoration: none;display: block;}
+ul.tjlist .title{font-size: 1rem;margin-bottom: 6px;line-height: 1.3em;}
+ul.tjlist .other{clear: both;margin-top: 5px;font-size: 12px;color: #999;}
+ul.tjlist img.ding{margin-right: 3px;vertical-align: middle;margin-top: -3px;}
+ul.tjlist .pic img{width: 100%;}
+ul.tjlist .bigImage .pic{height: 8rem;overflow: hidden;}
+ul.tjlist .bigImage .pic img{min-height: 8rem;}
+ul.tjlist .smallImage a{font-size: 0;}
+ul.tjlist .smallImage .title{display: inline-block;width: 60%;vertical-align: middle;}
+ul.tjlist .smallImage .pic{display: inline-block;width: 40%;vertical-align: middle;height: 5rem;overflow: hidden;}
+ul.tjlist .smallImage .pic img{min-height: 5rem;}
+ul.tjlist .multiImage .pic div{float:left;width: 33.333%;height:4rem;overflow: hidden;}
+ul.tjlist .multiImage .pic div:first-child{padding-right: 1%;}
+ul.tjlist .multiImage .pic div:last-child{padding-left: 1%;}
+ul.tjlist .multiImage .pic img{width: 100%;min-height: 4rem;}
+
+ul.zxlist{}
+ul.zxlist li{border-bottom: 1px solid #ddd;}
+
+ul.xg{padding-left: 10px;list-style: disc;}
+ul.xg li{line-height:1.5;margin: 5px 0;}
+
+ul.xg-video{list-style: none;}
+ul.xg-video li{padding-left: 24px;background: url("../images/icon_video2_fy.gif") no-repeat left 7px;}
+
+ul.desktop{}
+ul.desktop li{display: inline;float: left;width:25%;padding: 10px;text-align: center; line-height: 2em;}
+ul.desktop li a{text-decoration: none;}
+ul.desktop li a img{width: 3.8rem;height:3.8rem;border-radius: 10px;}
+@media (min-width:768px) {
+  ul.desktop li{width: 16.5%;padding: 15px;}
+}

@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <title>音频播放</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/slideout.css">
+    <link rel="stylesheet" href="css/fengyang.css">
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.swiper.min.js"></script>
+    <script src="js/slideout.min.js"></script>
+    <script src="js/common.js"></script>
+
+    <!--html5shiv.min.js must be in head-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+
+    <link rel='stylesheet' id='vinyl_style-css' href='css/audio_player.css?ver=1.0.0' type='text/css' media='all'/>
+    <link rel='stylesheet' id='jplayer-css' href='css/jplayer.css?ver=1.0.0' type='text/css' media='all'/>
+    <link rel='stylesheet' id='themeify-icon-css' href='css/themify-icons.css?ver=1.0.0' type='text/css' media='all'/>
+
+</head>
+
+<body>
+<nav id="menu">
+    <div class="tophead">-凤阳网络电视台-</div>
+    <ul class="clearfix mn">
+        <li><a href="cover.html">封面</a></li>
+        <li><a href="index.html">凤阳首页</a></li>
+        <li><a href="fynews.html">凤阳新闻</a></li>
+        <li><a href="sznews.html">时政新闻</a></li>
+        <li><a href="audiolist.html">音频列表</a></li>
+        <li><a href="guangbo.html">广播直播</a></li>
+        <li><a href="video.html">视频播放</a></li>
+        <li><a href="audio.html">音频播放</a></li>
+        <li><a href="yuedu.html">正在阅读</a></li>
+        <li><a href="fenxiang.html">分享</a></li>
+    </ul>
+</nav>
+
+<main id="panel">
+    <div class="logobar">
+        <span class="rback"><a href="#"><span class="song bold">&lt;</span> 返回 </a></span>
+        <span class="f26">正在播放</span>
+        <span class="toggle-button"></span>
+    </div>
+    <div class="container">
+        <div class="row">
+            <script type="text/javascript">
+                jQuery(document).ready(function () {
+                    var myPlaylist = new jPlayerPlaylist({
+                                jPlayer: "#jquery_jplayer_6",
+                                cssSelectorAncestor: "#jp_container_6"
+                            },
+                            [
+                                /* {
+                                 title:"<div class='item-cover'><img src=http://img2.ccsxtv.com/34/70/417ecd04-61b4-4ccd-a473-ade73046b0f6.jpg  alt='山花花' /></div><div class='item-song'>山花花</div><div class='item-artist'>杨梓文祺</div>",
+                                 itunes :"#",
+                                 amazon : "#",
+                                 buy : "#",
+                                 download : "",
+                                 mp3:"http://v3.ccsxtv.com/audio/b0/1d0/38cd8b01-7f55-4823-ba7b-a029c4b3cc47.mp3"
+                                 }  */
+                            ],
+                            {
+                                swfPath: "js",
+                                supplied: "mp3",
+                                wmode: "window",
+                                smoothPlayBar: false,
+                                keyEnabled: false
+                            });
+                });
+            </script>
+
+            <!-- Vinyl Audio Player -->
+            <div class="vinyl-container vinyl-audio boxed style-6">
+                <div class="inner">
+                    <div id="jquery_jplayer_6" class="jp-jplayer"></div>
+                    <div id="jp_container_6" class="jp-audio">
+                        <div class="inner">
+                            <div class="jp-gui jp-interface">
+                                <div class="jp-controls-wrap">
+                                    <div class="song_title"></div>
+
+                                    <!-- mt-player-control -->
+                                    <div class="mt-player-control">
+                                        <a href="javascript:;" class="jp-previous disabled" tabindex="1"><i
+                                                class="ti-control-backward"></i></a>
+                                        <a href="javascript:;" class="jp-play" tabindex="1"><i
+                                                class="ti-control-play"></i></a>
+                                        <a href="javascript:;" class="jp-pause" tabindex="1"><i
+                                                class="ti-control-pause"></i></a>
+                                        <a href="javascript:;" class="jp-next" tabindex="1"><i
+                                                class="ti-control-forward"></i></a>
+                                        <a href="javascript:;" class="jp-stop" tabindex="1"></a>
+                                    </div>
+                                    <!-- mt-player-progress -->
+                                    <div class="mt-player-progress">
+                                        <div class="jp-progress">
+                                            <div class="jp-seek-bar">
+                                                <div class="jp-play-bar"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- mt-player-control-bottom -->
+                                    <div class="mt-player-control-bottom">
+                                        <div class="jp-current-time"></div>
+                                        <i class="italic">/</i>
+
+                                        <div class="jp-duration"></div>
+
+                                        <div class="jp-controls clearfix">
+                                            <a href="javascript:;" class="jp-mute" tabindex="1" title="mute"><i
+                                                    class="ti-volume"></i></a>
+                                            <a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute"><i
+                                                    class="ti-volume"></i></a>
+                                            <a href="javascript:;" class="jp-repeat" tabindex="1" title="repeat"><i
+                                                    class="ti-loop"></i></a>
+                                            <a href="javascript:;" class="jp-repeat-off" tabindex="1"
+                                               title="repeat off"><i class="ti-loop"></i></a>
+                                            <a href="javascript:;" class="jp-volume-max" tabindex="1"
+                                               title="max volume"></a>
+                                            <a href="javascript:;" class="jp-shuffle" tabindex="1" title="shuffle"><i
+                                                    class="ti-control-shuffle">
+                                            </i></a>
+                                            <a href="javascript:;" class="jp-shuffle-off" tabindex="1"
+                                               title="shuffle off"><i class="ti-control-shuffle">
+                                            </i></a>
+                                            <a href="javascript:;" class="jp-playlist-toggle" tabindex="1" title="播放列表"><i
+                                                    class="ti-list"></i></a>
+                                            <a href="javascript:;" class="jp-lrc-toggle" tabindex="1" title="歌词"><i
+                                                    class="ti-music"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="jp-volume-bar">
+                                        <div class="jp-volume-bar-value"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="jp-playlist">
+                                <ul class="jp-playlist-inner">
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="jp-lrc">
+                                <textarea class="jp-lrc-content" id="jp-lrc-content">[ti:山花花]
+                                    [ar:杨梓文祺]
+                                    [al:山花花]
+                                    [by:]
+                                    [offset:700]
+                                    [00:00.43]山花花 - 杨梓
+                                    [00:01.20]词：蒋才胜
+                                    [00:01.81]曲：蒋才胜
+                                    [00:02.43]和声：杨梓文祺，樊桐舟
+                                    [00:03.77]编曲：李凯稠
+                                    [00:05.36]山花花
+                                    [00:10.50]山花花
+                                    [00:13.10]
+                                    [00:17.69]山花花香
+                                    [00:21.26]
+                                    [00:35.99]山泉水甜哎 山泉清凉
+                                    [00:41.14]杜鹃花在山坡上 开得漂亮
+                                    [00:46.86]哥在山顶望呀望 心花怒放
+                                    [00:52.38]不怕头顶顶上那 大大的太阳
+                                    [00:59.90]
+                                    [01:00.74]小河水清哎 小河水淌
+                                    [01:06.07]云彩映在河面上 风吹波浪
+                                    [01:11.66]妹在桥头望呀望 望穿了肠
+                                    [01:17.16]也盼屋顶顶上那 圆圆的月亮
+                                    [01:25.41]山花花红哎 山花花香哎
+                                    [01:30.95]袅袅的炊烟里 飘荡多少情哎
+                                    [01:36.43]山花花红哎 山花花香哎
+                                    [01:41.96]火辣辣的山歌里哟
+                                    [01:47.48]唱的都是爱哎
+                                    [01:50.44]阵阵山风吹红了山岗
+                                    [01:53.04]山花美成一朵俏姑娘
+                                    [01:55.83]迎着一路花香 来到你的身旁
+                                    [01:58.82]把情话对你轻轻讲
+                                    [02:01.33]声声牧笛吹在牛背上
+                                    [02:04.06]情思缕缕长出了翅膀
+                                    [02:06.80]天上鸟儿成对 水边鸳鸯成双
+                                    [02:09.86]我们依偎在这最美的天堂
+                                    [02:13.72]
+                                    [02:15.31]小河水清哎 小河水淌
+                                    [02:20.54]云彩映在河面上 风吹波浪
+                                    [02:26.12]妹在桥头望呀望 望穿了肠
+                                    [02:31.98]也盼屋顶顶上那 圆圆的月亮
+                                    [02:39.93]山花花红哎 山花花香哎
+                                    [02:45.38]悠悠的大山里 美得让人醉哎
+                                    [02:50.91]山花花红哎 山花花香哎
+                                    [02:56.54]火火的好日子里哟
+                                    [03:02.05]幸福万年长哎
+                                    [03:06.33]山花花红哎 山花花香哎
+                                    [03:11.76]悠悠的大山里 美得让人醉哎
+                                    [03:17.16]山花花红哎 山花花香哎
+                                    [03:22.99]火火的好日子里哟
+                                    [03:28.24]幸福万年长哎
+                                    [03:34.22]
+                                </textarea>
+                                <ul class="jp-lrc-list">
+                                </ul>
+                            </div>
+
+                            <div class="jp-no-solution">
+                                <span>需要更新</span>
+                                <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash插件</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Vinyl Audio Player -->
+
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="introduction">
+                    <div class="fleft"><img class="geshou" src="images/geshou.jpg"></div>
+                    <div class="txt">
+                        <div class="f18b">介绍：</div>
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;杨梓文祺，原名杨梓，1983年10月25日出生于内蒙古呼伦贝尔鄂伦春自治旗，中国内地女歌手、主持人。</p>
+
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;2009年，报名参加湖南卫视选秀娱乐节目《快乐女声》新浪网络直通区的比赛，获得新浪网络直通区10强、全国总决赛第十三名[1]
+                            。2012年，推出首张个人音乐专辑《谁是我的郎》[2]
+                            。2013年，以嘉宾主持的身份主持吉林卫视文化娱乐栏目《放歌中国》[3] 。2014年，担任综艺节目《我的演唱会》的主持人[4] 。2015年，推出个人单曲《山花花》[5] 。</p>
+
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;2009年，报名参加湖南卫视选秀娱乐节目《快乐女声》新浪网络直通区的比赛，获得新浪网络直通区10强、全国总决赛第十三名[1]
+                            。2012年，推出首张个人音乐专辑《谁是我的郎》[2]
+                            。2013年，以嘉宾主持的身份主持吉林卫视文化娱乐栏目《放歌中国》[3] 。2014年，担任综艺节目《我的演唱会》的主持人[4] 。2015年，推出个人单曲《山花花》[5] 。</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
+
+<script type='text/javascript' src='js/jquery.jplayer.min.js?ver=4.2.2'></script>
+<script type='text/javascript' src='js/jplayer.config.js?ver=4.2.2'></script>
+<script type='text/javascript' src='js/jplayer.playlist.js?ver=4.2.2'></script>
+<script type='text/javascript' src='js/jquery.jplayer.lrc.js?ver=4.2.2'></script>
+</body>
+</html>
