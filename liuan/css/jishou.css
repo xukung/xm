@@ -19,13 +19,17 @@ nav a {margin:0 22px;}
 nav a:link,nav a:visited {color:#fff;}
 nav a:hover {color:#ff0;text-decoration:none;}
 nav a.cur{color:#ff0;font-weight:bold;}
-.logobar .rlink{float: right;width: 230px;margin-top: 15px;}
-.logobar .rlink a{display: inline;float: left;width: 90px;padding:3px;color: #45d5f9;}
+.logobar .rlink{float: right;width: 210px;margin-top: 15px;}
+.logobar .rlink a{display: inline;float: left;width: 80px;padding:3px;color: #45d5f9;}
 .logobar a.i_fy{padding-left: 20px;background: url("../images/icons/icon_fengyang.png") no-repeat left center;}
 .logobar a.i_weibo{padding-left: 20px;background: url("../images/icons/tvicon4.jpg") no-repeat left center;}
 .logobar a.i_weixin{padding-left: 20px;background: url("../images/icons/tvicon1.jpg") no-repeat left center;}
 .logobar a.i_android{padding-left: 20px;background: url("../images/icons/tvicon2.png") no-repeat left center;}
 .logobar a.i_ios{padding-left: 20px;background: url("../images/icons/tvicon3.png") no-repeat left center;}
+.logobar a.i_5{padding-left: 24px;background: url("../images/icons/tvicon5.png") no-repeat left center;}
+.logobar a.i_6{padding-left: 20px;background: url("../images/icons/tvicon6.png") no-repeat left center;}
+.logobar a.i_7{padding-left: 24px;background: url("../images/icons/tvicon7.png") no-repeat left center;}
+.logobar a.i_8{padding-left: 20px;background: url("../images/icons/tvicon8.png") no-repeat left center;}
 
 
 /*footer*/
@@ -47,18 +51,18 @@ footer{margin-bottom:20px;}
     background: url("../images/icon_title_jishou.png") no-repeat left center;}
 .title .more{display:inline;float:right;}
 .title .more img{*margin-top:8px;}
-.title .tags{display:inline;float:right;margin-right:50px;}
+.title .tags{display:inline;float:right;margin-right:10px;}
 .title .tags a{display:inline;float:left;height:28px;line-height:28px;padding:0 5px 0 5px;}
 .title .tags a:hover{text-decoration:none;}
-.title .tags a.cur{border-bottom:2px solid #f90;}
+.title .tags a.cur{color: #f00; border-bottom:2px solid #f00;}
 .content{padding:15px 20px;}
-ul.szjs{padding:0 20px;height:312px;overflow: hidden;}
+ul.szjs{padding:0 5px;height:256px;overflow: hidden;}
 ul.szjs li{margin-bottom: 5px;border:1px solid #ddd;width: 100%;height: 45px;line-height:45px;}
 ul.szjs li:hover{background: #eee;}
 ul.szjs li:hover a{color: #c00;}
 ul.szjs li .icon{display: inline;float: left;width: 40px;height: 45px;line-height:45px;border-right: 1px solid #ddd;text-align: center;}
 ul.szjs li .icon img{*margin-top:10px;}
-ul.szjs li .txt{display: inline;float: left;width:300px;padding: 0 10px;font-size: 16px;font-family: "Microsoft Yahei";}
+ul.szjs li .txt{display: inline;float: left;width:270px;padding: 0 10px;font-size: 16px;font-family: "Microsoft Yahei";}
 .col_1929_1{width:620px;}
 .col_1929_2{width:370px;}
 a.video3{padding:2px 0 2px 25px;background:url(../images/icon_video2.jpg) no-repeat left center;*display:inline-block;}
@@ -69,7 +73,7 @@ ul.vlist{}
 ul.vlist li{display: inline;float: left;width: 280px;height: 80px;padding:15px 10px;border: 1px solid #eee;
     border-top:5px solid #eee;margin: 10px;}
 ul.vlist .pic{display: inline;float:left;}
-ul.vlist .txt{display: inline;float: left;margin-left: 10px;line-height:2em;}
+ul.vlist .txt{display: inline;float: left;width:145px;margin-left: 10px;line-height:2em;}
 ul.vlist2{}
 ul.vlist2 li{display: inline;float: left;width: 280px;height: 65px;margin: 10px;background: #f0f0f0;}
 ul.vlist2 .pic{display: inline;float:left;}
@@ -103,3 +107,35 @@ ul.zx li .fleft{font-size: 16px;font-family: "Microsoft Yahei";}
 ul.audio{}
 ul.audio li{display:inline;float: left; width: 20%;margin:10px 2.4%;border-bottom: 1px solid #ddd;}
 ul.audio li.more{border: 0;text-align: right;}
+
+.col_0929_1{width: 650px;}
+.col_0929_2{width: 350px;}
+
+.col_2306_1{width:130px;}
+.col_2306_2{width:175px;}
+
+ul.rank{}
+ul.rank li{margin: 5px 0;}
+ul.rank li .num{float: left;width: 30px;}
+ul.rank li .num span{display: inline-block;width: 22px;height:22px;line-height: 22px;text-align: center;background: #0054ff;color:#fff;}
+ul.rank li:nth-child(1) .num span,ul.rank li:nth-child(2) .num span,ul.rank li:nth-child(3) .num span{background: #ff5400;}
+ul.rank li .info{float: right;width: 314px;}
+
+ul.arc{margin-top: 30px;}
+ul.arc li{float: left;width: 120px;height: 170px;margin: 0 19px;}
+ul.arc li img{width:120px;height: 120px;border-radius: 100%;}
+ul.arc li .txt{text-align: center;font-size: 16px;margin-top: 10px;}
+ul.arc li .txt a{color:#008afe;}
+
+.big-button a{
+    display: inline-block;
+    width: 300px;
+    height: 70px;
+    line-height: 70px;
+    background:#f5f5f5;
+    font-size: 33px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #ddd;
+    margin: 0 13px;
+}

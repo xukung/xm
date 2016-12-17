@@ -1,3 +1,8 @@
+20161217
+/jishou.html
+/css/jishou.css
+/images/*
+
 20160623
 /mob_yuanwenhua/css/changshou.css
 /mob_yuanwenhua/bazhou_index2.html
